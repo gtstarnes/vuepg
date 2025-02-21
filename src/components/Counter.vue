@@ -1,4 +1,4 @@
-<script lang="ts">
+<script setup lang="ts">
     import {ref, computed} from 'vue';
 
     const count = ref<number>(0);
