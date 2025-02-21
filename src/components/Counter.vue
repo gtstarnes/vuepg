@@ -13,7 +13,7 @@
         <div>
             <button @click="count++">+</button>
             <button>clr</button>
-            <button>-</button>
+            <button @click="count--">-</button>
         </div>
         <div>{{ square }}</div>
     </section>
