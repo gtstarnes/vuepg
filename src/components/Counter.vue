@@ -2,6 +2,9 @@
     import {ref, computed} from 'vue';
 
     const count = ref<number>(0);
+    const square = computed(() => {
+        return count.value * count.value
+    })
 </script>
 
 <template>
