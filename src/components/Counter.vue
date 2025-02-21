@@ -4,7 +4,7 @@
     const count = ref<number>(0);
     const square = computed(() => {
         return count.value * count.value
-    }, [count.value])
+    })
 </script>
 
 <template>
@@ -12,7 +12,7 @@
         <div> {{ count }}</div>
         <div>
             <button @click="count++">+</button>
-            <button>clr</button>
+            <button @click="count = 0">clr</button>
             <button @click="count--">-</button>
         </div>
         <div>{{ square }}</div>
