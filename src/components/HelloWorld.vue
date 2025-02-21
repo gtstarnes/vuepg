@@ -2,11 +2,11 @@
 import { ref } from 'vue';
 
 
-  const name = ref('')
+  const name = ref('world')
 </script>
 
 <template>
-  <h1>Hello World</h1>
+  <h1>Hello, {{name}}</h1>
 </template>
 
 <style scoped>
