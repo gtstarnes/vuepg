@@ -6,8 +6,8 @@ import { ref } from 'vue';
 </script>
 
 <template>
-  <h1>Hello, {{ name }}</h1>
-  <input type="text" placeholder="enter a name" v-model="name" />
+  <input type="text" placeholder="enter a name" v-model="name" />  
+  <h1 v-if="name !== ''">Hello, {{ name }}</h1>
 </template>
 
 <style scoped>
