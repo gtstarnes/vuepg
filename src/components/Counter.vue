@@ -8,7 +8,15 @@
 </script>
 
 <template>
-
+    <section>
+        <div> {{ count }}</div>
+        <div>
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+        <div>{{ square }}</div>
+    </section>
 </template>
 
 <style lang="css" scoped>
