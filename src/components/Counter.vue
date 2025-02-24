@@ -8,7 +8,13 @@ import { computed, ref } from 'vue';
 </script>
 
 <template>
-
+    <span>{{ count }}</span>
+    <div>
+        <button>+</button>
+        <button>clr</button>
+        <button>-</button>
+    </div>
+    <span>{{square}}</span>
 </template>
 
 <style lang="css" scoped>
