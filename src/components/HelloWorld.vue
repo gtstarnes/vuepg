@@ -7,7 +7,12 @@ import { ref } from 'vue';
 
 <template>
   <input type="text" placeholder="enter name" v-model="name" />
-
+  <div v-if="name !== ''">
+    Hello, {{ name }}
+  </div>
+  <div v-else>
+    Please introduction yourself
+  </div>
 </template>
 
 <style scoped>
