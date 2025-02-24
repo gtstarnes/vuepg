@@ -6,6 +6,7 @@ import { ref } from 'vue';
 </script>
 
 <template>
+  <input type="text" placeholder="enter name" v-model="name" />
 
 </template>
 
