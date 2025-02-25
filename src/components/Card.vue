@@ -24,8 +24,8 @@ import { ref } from 'vue';
 </script>
 
 <template>
-    <article v-for="{id, product,des,price} in cardInfo" :key="id">
-        <h4>{{ product }}</h4>
+    <article v-for="({id, product,des,price}, index) in cardInfo" :key="id">
+        <h4>{{ product }} {{ index }}</h4>
         <p>{{ des }}</p>
         <div>
             <span>{{ price }}</span>
