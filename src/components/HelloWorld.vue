@@ -5,7 +5,7 @@ import { ref } from 'vue';
 </script>
 
 <template>
-
+  <input type="text" v-model="name" placeholder="introduce yourself" />
 </template>
 
 <style scoped>
