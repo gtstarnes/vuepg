@@ -64,6 +64,12 @@ import { ref } from 'vue';
                 border: none;
                 border-radius: 2px;
                 height: 2rem;
+                cursor: pointer;
+            }
+
+            button:active {
+                background-color: purple;
+                scale: 95%;
             }
         }
     }
