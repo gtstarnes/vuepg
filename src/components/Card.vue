@@ -74,6 +74,12 @@ import { ref } from 'vue';
         }
     }
 
+    article:hover {
+        border: 0.25rem solid;
+        border-image: linear-gradient(var(--angle), rgba(0,0,0,0) 70%, blueviolet) 1;
+        animation: 4s rotate linear infinite;
+    }
+
     @property --angle {
         syntax: "<angle>";
         initial-value: 0deg;
@@ -81,8 +87,8 @@ import { ref } from 'vue';
     }
 
     @keyframes rotate {
-        --angle {
-            to: 360deg;
+        to {
+            --angle: 360deg;
         }
     }
 </style>
