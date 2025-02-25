@@ -1,7 +1,10 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { computed, ref } from 'vue';
 
     const count = ref(0);
+    const square = computed(() => {
+        return count.value * count.value
+    })
 </script>
 
 <template>
