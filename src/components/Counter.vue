@@ -10,9 +10,9 @@ import { computed, ref } from 'vue';
 <template>
     <span>{{ count }}</span>
     <div>
-        <button></button>
-        <button></button>
-        <button></button>
+        <button @click="count++">+</button>
+        <button @click="count=0">clr</button>
+        <button @click="count--">-</button>
     </div>
     <span>{{ square }}</span>
 </template>
