@@ -113,4 +113,10 @@ import { ref } from 'vue';
         initial-value: 0deg;
         inherits: false;
     }
+
+    @keyframes rotate {
+        to {
+            --angle: 360;
+        }
+    }
 </style>
