@@ -67,7 +67,7 @@ import { ref } from 'vue';
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
-        row-gap: 1rem;
+        row-gap: 2rem;
 
         article {
             width: 10rem;
@@ -80,6 +80,18 @@ import { ref } from 'vue';
 
             h4 {
                 margin-bottom: 0;
+                transition: margin-bottom 0.25s;
+            }
+
+            &:hover {
+                border: 0.2rem solid;
+                border-image: linear-gradient(var(--angle), rgba(0,0,0,0) 70%, blueviolet) 1;
+                animation: 4s rotate linear infinite;
+
+                h4 {
+                    margin-bottom: 4rem;
+                    transition: margin-bottom 0.5s;
+                }
             }
 
             .controls {
@@ -116,7 +128,7 @@ import { ref } from 'vue';
 
     @keyframes rotate {
         to {
-            --angle: 360;
+            --angle: 360deg;
         }
     }
 </style>
