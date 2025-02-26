@@ -80,7 +80,7 @@ import { ref } from 'vue';
 
             h4 {
                 margin-bottom: 0;
-                transition: margin-bottom 0.25s;
+                transition: margin-bottom 0.5s;
             }
 
             &:hover {
