@@ -49,7 +49,9 @@ import { ref } from 'vue';
 
 <template>
     <section>
-        
+        <article v-for="({id, name, des, price}, index) in cards" :key="id">
+            
+        </article>
     </section>
 </template>
 
