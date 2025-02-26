@@ -1,94 +1,11 @@
 <script setup lang="ts">
-import { ref } from 'vue';
 
-    const cardInfo = ref([
-        {
-            id: 1,
-            product: 'asdcsca',
-            des: 'fsdd acdasd gbs asdcsa.',
-            price: '$56.76',
-        },
-        {
-            id: 2,
-            product: 'asdcsca',
-            des: 'fsdd acdasd gbs asdcsa.',
-            price: '$56.76',
-        },
-        {
-            id: 3,
-            product: 'asdcsca',
-            des: 'fsdd acdasd gbs asdcsa.',
-            price: '$56.76',
-        },
-    ])
 </script>
 
 <template>
-    <article v-for="({id, product,des,price}, index) in cardInfo" :key="id">
-        <h4>{{ product }} {{ index }}</h4>
-        <p>{{ des }}</p>
-        <div>
-            <span>{{ price }}</span>
-            <button>Add to Cart</button>
-        </div>
-    </article>
+
 </template>
 
 <style lang="css">
-    article {
-        height: 10rem;
-        width: 12rem;
-        box-shadow: 8px 8px 10px rgba(0,0,0,0.15);
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        padding: 1rem;
-
-        h4 {
-            margin-bottom: 0;
-        }
-
-        div {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            span {
-                color: blueviolet;
-                font-size: 1.75rem;
-            }
-
-            button {
-                background-color: blueviolet;
-                color: white;
-                border: none;
-                border-radius: 2px;
-                height: 2rem;
-                cursor: pointer;
-            }
-
-            button:active {
-                background-color: purple;
-                scale: 95%;
-            }
-        }
-    }
-
-    article:hover {
-        border: 0.25rem solid;
-        border-image: linear-gradient(var(--angle), rgba(0,0,0,0) 70%, blueviolet) 1;
-        animation: 4s rotate linear infinite;
-    }
-
-    @property --angle {
-        syntax: "<angle>";
-        initial-value: 0deg;
-        inherits: false;
-    }
-
-    @keyframes rotate {
-        to {
-            --angle: 360deg;
-        }
-    }
+    
 </style>
