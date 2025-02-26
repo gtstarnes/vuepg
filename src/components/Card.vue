@@ -53,7 +53,7 @@ import { ref } from 'vue';
             <h4>{{ name }} {{ index }}</h4>
             <div>
                 <p>{{ des }}</p>
-                <div>
+                <div class="controls">
                     <span>{{ price }}</span>
                     <button>Add to Cart</button>
                 </div>
@@ -77,6 +77,34 @@ import { ref } from 'vue';
             flex-direction: column;
             justify-content: end;
             padding: 1rem;
+
+            h4 {
+                margin-bottom: 0;
+            }
+
+            .controls {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                span {
+                    color: blueviolet;
+                    font-size: 1.5rem;
+                }
+
+                button {
+                    border: none;
+                    background-color: blueviolet;
+                    color: white;
+                    height: 2rem;
+                    cursor: pointer;
+
+                    &:active {
+                        background-color: purple;
+                        scale: 95%;
+                    }
+                }
+            }
         }
     }
 </style>
