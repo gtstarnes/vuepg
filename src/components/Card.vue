@@ -50,7 +50,14 @@ import { ref } from 'vue';
 <template>
     <section>
         <article v-for="({id, name, des, price}, index) in cards" :key="id">
-            
+            <h4>{{ name }} {{ index }}</h4>
+            <div>
+                <p>{{ des }}</p>
+                <div>
+                    <span>{{ price }}</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
         </article>
     </section>
 </template>
