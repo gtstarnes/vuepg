@@ -48,7 +48,7 @@ import { ref } from 'vue';
 </script>
 
 <template>
-    <section>
+    <section class="section-cards">
         <article v-for="({id, name, des, price}, index) in cards" :key="id">
             <h4>{{ name }} {{ index }}</h4>
             <div>
@@ -63,5 +63,20 @@ import { ref } from 'vue';
 </template>
 
 <style lang="css">
-    
+    .section-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        row-gap: 1rem;
+
+        article {
+            width: 10rem;
+            height: 12rem;
+            box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 1rem;
+        }
+    }
 </style>
