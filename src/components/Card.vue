@@ -107,4 +107,10 @@ import { ref } from 'vue';
             }
         }
     }
+
+    @property --angle {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+    }
 </style>
