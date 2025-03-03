@@ -6,6 +6,7 @@ import { ref } from 'vue';
 
 <template>
   <input type="text" placeholder="introduce yourself" v-model="name" />
+  <div>Hello, {{ name || 'Stranger' }}</div>
 </template>
 
 <style scoped>
