@@ -6,7 +6,8 @@ import { ref } from 'vue';
 
 <template>
   <input type="text" placeholder="introduce yourself" v-model="name" />
-  <div>Hello, {{ name || 'Stranger' }}</div>
+  <div v-if="name ===''">introduce yourself</div>
+  <div v-else="">Hello, {{ name }}</div>
 </template>
 
 <style scoped>
