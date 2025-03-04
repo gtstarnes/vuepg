@@ -1,13 +1,19 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { toggle } from './store';
+import { toggle, loggedIn } from './store';
 
 
     const username = ref('')
+
+    function handleSubmit(e: Event) {
+        e.preventDefault()
+        loggedIn.user = username.value
+        loggedIn.status = true;
+    }
 </script>
 
 <template>
-    <form>
+    <form @submit="handleSubmit">
         <div>
             <label for="username">Username: </label>
             <input name="username" id="username" 
