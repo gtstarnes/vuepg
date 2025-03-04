@@ -2,7 +2,7 @@
 </script>
 
 <template>
-
+    <div>signup</div>
 </template>
 
 <style lang="css">
