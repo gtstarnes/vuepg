@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import { toggle } from './store';
 
 
     const username = ref('')
@@ -20,7 +21,7 @@ import { ref } from 'vue';
         <div>
             <button type="submit">Login</button>
             <button type="reset">Cancel</button>
-            <button type="button">Sign Up</button>
+            <button type="button" @click="toggle.state = !toggle.state">Sign Up</button>
         </div>
     </form>
 </template>
