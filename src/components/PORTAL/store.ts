@@ -9,4 +9,8 @@ const toggle = reactive({
     state: false
 })
 
-export { login, toggle }
+function toggleState() {
+    toggle.state = !toggle.state
+}
+
+export { login, toggle, toggleState }
