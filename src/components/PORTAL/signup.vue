@@ -17,7 +17,7 @@ import { login, toggle, toggleState, handleSubmit } from './store';
             <input id="password" name="password" placeholder="password" type="password" />
         </div>
         <div>
-            <button type="submit">Sign In</button>
+            <button type="submit">Sign Up</button>
             <button type="reset">Cancel</button>
             <button type="button" @click="toggleState">Sign In</button>
         </div>
