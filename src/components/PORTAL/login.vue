@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { toggleState } from './store';
+
 
 </script>
 
@@ -16,7 +18,7 @@
         <div>
             <button type="submit">Sign In</button>
             <button type="reset">Cancel</button>
-            <button type="button">Sign Up</button>
+            <button type="button" @click="toggleState">Sign Up</button>
         </div>
     </form>
 </template>
