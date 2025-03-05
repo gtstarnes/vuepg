@@ -4,3 +4,7 @@ const login = reactive({
     user: '',
     status: false,
 })
+
+const toggle = reactive({
+    state: false
+})
