@@ -1,4 +1,4 @@
-import { reactive } from "vue";
+import { reactive, type Ref } from "vue";
 
 const login = reactive({
     user: '',
@@ -13,4 +13,10 @@ function toggleState() {
     toggle.state = !toggle.state
 }
 
-export { login, toggle, toggleState }
+const handleSubmit = (e: Event, username:string) => {
+    e.preventDefault()
+    login.user = username
+    login.status = true;
+}
+
+export { login, toggle, toggleState, handleSubmit }
