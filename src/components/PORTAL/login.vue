@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import { ref } from 'vue';
 import { toggleState } from './store';
 
+const username = ref('')
 
 </script>
 
@@ -9,7 +11,7 @@ import { toggleState } from './store';
         <div>
             <label for="username">Username: </label>
             <input id="username" name="username" 
-                placeholder="enter username" type="text" />
+                placeholder="enter username" type="text" v-model="username" />
         </div>
         <div>
             <label for="password">Password: </label>
