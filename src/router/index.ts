@@ -6,7 +6,8 @@ import Portal from "../components/PORTAL/portal.vue";
 
 const routes = [
     {path: '/hello', component: HelloWorld},
-    {path: '/cards?', component: Card},
+    {path: '/card', component: Card},
+    {path: '/cards', component: Card},
     {path: '/counter', component: Counter},
     {path: '/portal', component: Portal},
 ]
