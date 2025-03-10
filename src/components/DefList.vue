@@ -5,12 +5,22 @@
     <dl>
         <dt>Hola</dt>
         <dd>hello</dd>
-        <dt>salve</dt>
+        <dt>Salve</dt>
         <dd>hello</dd>
-        <dt>hei</dt>
+        <dt>Hei</dt>
         <dd>hello</dd>
     </dl>
 </template>
 
 <style lang="css" scoped>
+    dl {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+    dt {
+        font-weight: bold;
+    }
+    dt::after {
+        content: ":";
+    }
 </style>
