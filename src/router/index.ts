@@ -10,3 +10,10 @@ const routes = [
     {path: '/counter', component: Counter},
     {path: '/portal', component: Portal},
 ]
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes,
+})
+
+export default router
