@@ -6,10 +6,7 @@ import Portal from './components/PORTAL/portal.vue';
 </script>
 
 <template>
-  <HelloWorld />
-  <Portal />
-  <Counter />
-  <Card />
+  <router-view />
 </template>
 
 <style scoped>
