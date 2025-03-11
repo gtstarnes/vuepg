@@ -7,6 +7,11 @@ import { ref } from 'vue';
 </script>
 
 <template>
+    <ol>
+        <li v-for="item in steps" :key="item">
+            {{ item }}
+        </li>
+    </ol>
 
 </template>
 
