@@ -32,4 +32,9 @@ import { ref } from 'vue';
             list-style: upper-roman;
         }
     }
+    ul {
+        li {
+            list-style: square;
+        }
+    }
 </style>
