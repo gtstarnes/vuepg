@@ -37,4 +37,15 @@ import { ref } from 'vue';
             list-style: square;
         }
     }
+    dl {
+        display: grid;
+        grid-template-columns: 2rem 1fr;
+
+        dt {
+            font-weight: bold;
+        }
+        dt::after {
+            content: ':'
+        }
+    }
 </style>
