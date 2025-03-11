@@ -27,5 +27,9 @@ import { ref } from 'vue';
 </template>
 
 <style lang="css" scoped>
-
+    ol {
+        li {
+            list-style: upper-roman;
+        }
+    }
 </style>
