@@ -17,6 +17,12 @@ import { ref } from 'vue';
             {{ thing }}
         </li>
     </ul>
+    <dl>
+        <template v-for="(value, key) in words" :key="key">
+            <dt>{{ key }}</dt>
+            <dd>{{ value }}</dd>
+        </template>
+    </dl>
 
 </template>
 
