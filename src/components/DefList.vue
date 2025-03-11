@@ -12,6 +12,11 @@ import { ref } from 'vue';
             {{ item }}
         </li>
     </ol>
+    <ul>
+        <li v-for="thing in stuff" :key="thing">
+            {{ thing }}
+        </li>
+    </ul>
 
 </template>
 
