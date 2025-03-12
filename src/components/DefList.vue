@@ -46,4 +46,7 @@ import { ref } from 'vue';
             font-style: italic;
         }
     }
+    ul {
+        list-style: circle;
+    }
 </style>
