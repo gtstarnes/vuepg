@@ -29,5 +29,7 @@ import { ref } from 'vue';
 </template>
 
 <style lang="css" scoped>
-
+    ol {
+        list-style: lower-roman;
+    }
 </style>
