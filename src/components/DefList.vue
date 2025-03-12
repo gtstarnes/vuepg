@@ -13,7 +13,9 @@ import { ref } from 'vue';
 </script>
 
 <template>
- 
+    <ol>
+        <li v-for="step in steps" :key="step">{{ step }}</li>
+    </ol>
 </template>
 
 <style lang="css" scoped>
