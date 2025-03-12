@@ -16,6 +16,12 @@ import { ref } from 'vue';
     <ol>
         <li v-for="step in steps" :key="step">{{ step }}</li>
     </ol>
+    <dl>
+        <template v-for="(def, term) in words" :key="term">
+            <dt>{{ term }}</dt>
+            <dd>{{ def }}</dd>
+        </template>
+    </dl>
 </template>
 
 <style lang="css" scoped>
