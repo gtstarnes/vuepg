@@ -14,16 +14,21 @@ import { ref } from 'vue';
 </script>
 
 <template>
-    <ol>
+    <h3 id="steps">Steps</h3>
+    <ol aria-labelledby="steps">
         <li v-for="step in steps" :key="step">{{ step }}</li>
     </ol>
-    <dl>
+
+    <h3 id="vocab">Vocab List</h3>
+    <dl aria-labelledby="vocab">
         <template v-for="(def, term) in words" :key="term">
             <dt>{{ term }}</dt>
             <dd>{{ def }}</dd>
         </template>
     </dl>
-    <ul>
+
+    <h3 id="stuff">Stuff and Things</h3>
+    <ul aria-labelledby="stuff">
         <li v-for="thing in things" :key="thing"> {{ thing }}</li>
     </ul>
 </template>
