@@ -40,6 +40,7 @@ import { ref } from 'vue';
     dl {
         display: grid;
         grid-template-columns: auto 1fr;
+        margin-left: 1.5rem;
 
         dt {
             font-weight: bold;
