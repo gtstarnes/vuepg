@@ -32,4 +32,18 @@ import { ref } from 'vue';
     ol {
         list-style: lower-roman;
     }
+    dl {
+        display: grid;
+        grid-template-columns: auto 1fr;
+
+        dt {
+            font-weight: bold;
+        }
+        dt::after {
+            content: ':';
+        }
+        dd {
+            font-style: italic;
+        }
+    }
 </style>
