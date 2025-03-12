@@ -22,6 +22,9 @@ import { ref } from 'vue';
             <dd>{{ def }}</dd>
         </template>
     </dl>
+    <ul>
+        <li v-for="thing in things" :key="thing"> {{ thing }}</li>
+    </ul>
 </template>
 
 <style lang="css" scoped>
