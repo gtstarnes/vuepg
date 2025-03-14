@@ -22,6 +22,7 @@
         justify-content: center;
         box-shadow: 8px 8px 10px rgba(0,0,0,0.2);
         cursor: pointer;
+        border: none;
     }
 
     button:hover {
