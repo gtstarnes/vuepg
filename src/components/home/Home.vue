@@ -6,8 +6,8 @@
     <section>
         <nav>
             <ul>
-                <li v-for="({path}) in routes" :key="path">
-                    <HomeCard />
+                <li v-for="({path, name}, index) in routes" :key="index">
+                    <HomeCard :route="path" :name="name" />
                 </li>
             </ul>
         </nav>
