@@ -3,7 +3,6 @@
     import HomeCard from './HomeCard.vue';
 </script>
 <template>
-    <section>
         <nav>
             <ul>
                 <li v-for="({path, name}, index) in routes" :key="index">
@@ -11,19 +10,20 @@
                 </li>
             </ul>
         </nav>
-    </section>
 </template>
 
 <style lang="css" scoped>
-    section {
+    nav {
         display: flex;
         justify-content: center;
+        align-items: center;
         width: 100vw;
         height: 90vh;
         
-
         ul {
+            margin: 0;
             list-style: none;
+            width: 100%;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 10px;
