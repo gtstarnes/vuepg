@@ -26,6 +26,8 @@
 
     button:hover {
         border: 0.25rem solid;
+        border-image: linear-gradient(var(--angle), rgba(0,0,0,0) 70%, black) 1;
+        animation: rotate 3s linear infinite;
     }
     a {
         text-decoration: none;
