@@ -7,7 +7,7 @@
 
 <template>
     <article>
-        
+        <RouterLink to="{{props.route}}">{{ props.name }}</RouterLink>
     </article>
 </template>
 
