@@ -32,4 +32,10 @@
         font-size: 2rem;
         color: black;
     }
+
+    @property --angle {
+        initial-value: 0deg;
+        inherits: false;
+        syntax: '<angle>';
+    }
 </style>
