@@ -7,7 +7,7 @@
 
 <template>
     <button>
-        <RouterLink to="{{props.route}}">
+        <RouterLink :to="props.route">
             {{ props.name }}
         </RouterLink>
     </button>
