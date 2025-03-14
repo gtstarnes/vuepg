@@ -5,12 +5,12 @@
     }>()
 </script>
 
-<template>
-    <button>
-        <RouterLink :to="props.route">
-            {{ props.name }}
-        </RouterLink>
-    </button>
+<template> 
+    <RouterLink :to="props.route">
+        <button>
+                {{ props.name }}
+        </button>
+    </RouterLink>
 </template>
 
 <style lang="css" scoped>
@@ -23,6 +23,8 @@
         box-shadow: 8px 8px 10px rgba(0,0,0,0.2);
         cursor: pointer;
         border: none;
+        font-size: 2rem;
+        color: black;
     }
 
     button:hover {
@@ -32,8 +34,8 @@
     }
     a {
         text-decoration: none;
-        font-size: 2rem;
-        color: black;
+        
+        
     }
 
     @property --angle {
