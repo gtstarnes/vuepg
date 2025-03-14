@@ -38,4 +38,10 @@
         inherits: false;
         syntax: '<angle>';
     }
+
+    @keyframes rotate {
+        to {
+            --angle: 360deg;
+        }
+    }
 </style>
