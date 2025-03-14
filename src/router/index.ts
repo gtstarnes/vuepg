@@ -6,7 +6,7 @@ import Portal from "../components/PORTAL/portal.vue";
 import DefList from "../components/DefList.vue";
 import Home from "../components/home/Home.vue";
 
-const routes = [
+export const routes = [
     {path: '/', name: 'Home', component: Home},
     {path: '/hello', name: 'Hello',  component: HelloWorld},
     {path: '/cards', name: 'Cards',  component: Card},
@@ -20,4 +20,4 @@ const router = createRouter({
     routes,
 })
 
-export {router, routes}
+export default router
