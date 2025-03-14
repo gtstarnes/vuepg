@@ -7,13 +7,12 @@ import DefList from "../components/DefList.vue";
 import Home from "../components/home/Home.vue";
 
 const routes = [
-    {path: '/', component: Home},
-    {path: '/hello', component: HelloWorld},
-    {path: '/card', component: Card},
-    {path: '/cards', component: Card},
-    {path: '/counter', component: Counter},
-    {path: '/portal', component: Portal},
-    {path: '/deflist', component: DefList}
+    {path: '/', name: 'Home', component: Home},
+    {path: '/hello', name: 'Hello',  component: HelloWorld},
+    {path: '/cards', name: 'Cards',  component: Card},
+    {path: '/counter', name: 'Counter',  component: Counter},
+    {path: '/portal', name: 'Portal',  component: Portal},
+    {path: '/deflist', name: 'Lists',  component: DefList}
 ]
 
 const router = createRouter({
