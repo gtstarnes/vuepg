@@ -17,7 +17,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100vw;
+        width: 99vw;
         height: 90vh;
         
         ul {
