@@ -5,20 +5,27 @@ import { ref } from 'vue';
 
     function start(){
         const increase = () => {
-            progress.value += 1;
+            if (progress.value !== 100) {
+                progress.value += 1;
+            }
+            
         }
-
-        let interval = setInterval(increase, 1000);
+        let interval = setInterval(increase, 100);
         if (progress.value === 100) {
             clearInterval(interval)
         }
     }
+
+    function stop(){
+        
+    }
 </script>
 
 <template>
+    <div>{{ progress }}</div>
     <progress :value="progress" max="100" min="0"></progress>
     <div>
-        <button>Start</button>
+        <button @click="start">Start</button>
         <button>Stop</button>
     </div>
 </template>
