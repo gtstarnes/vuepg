@@ -6,7 +6,9 @@
         <nav>
             <ul>
                 <li v-for="({path, name}, index) in routes" :key="index">
-                    <HomeCard :route="path" :name="name" />
+                    <template v-if="index !== 0">
+                        <HomeCard :route="path" :name="name" />
+                    </template>
                 </li>
             </ul>
         </nav>
