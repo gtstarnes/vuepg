@@ -1,7 +1,11 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ref } from 'vue';
+
+    const progress = ref(10)
+</script>
 
 <template>
-    <progress value="70" max="100" min="0"></progress>
+    <progress :value="progress" max="100" min="0"></progress>
     <div>
         <button>Start</button>
         <button>Stop</button>
