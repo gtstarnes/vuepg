@@ -2,6 +2,17 @@
 import { ref } from 'vue';
 
     const progress = ref(10)
+
+    function start(){
+        const increase = () => {
+            progress.value += 1;
+        }
+
+        let interval = setInterval(increase, 1000);
+        if (progress.value === 100) {
+            clearInterval(interval)
+        }
+    }
 </script>
 
 <template>
