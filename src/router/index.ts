@@ -5,6 +5,7 @@ import Counter from "../components/Counter.vue";
 import Portal from "../components/PORTAL/portal.vue";
 import DefList from "../components/DefList.vue";
 import Home from "../components/home/Home.vue";
+import Progress from "../components/Progress.vue";
 
 export const routes = [
     {path: '/', name: 'Home', component: Home},
@@ -12,7 +13,8 @@ export const routes = [
     {path: '/cards', name: 'Cards',  component: Card},
     {path: '/counter', name: 'Counter',  component: Counter},
     {path: '/portal', name: 'Portal',  component: Portal},
-    {path: '/deflist', name: 'Lists',  component: DefList}
+    {path: '/deflist', name: 'Lists',  component: DefList},
+    {path: '/progress', name: 'Progress', component: Progress},
 ]
 
 const router = createRouter({
