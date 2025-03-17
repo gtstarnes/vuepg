@@ -2,6 +2,10 @@
 
 <template>
     <progress value="70" max="100" min="0"></progress>
+    <div>
+        <button>Start</button>
+        <button>Stop</button>
+    </div>
 </template>
 
 <style lang="css" scoped>
