@@ -4,20 +4,14 @@ import { ref } from 'vue';
     const progress = ref(10)
 
     function start(){
-        const increase = () => {
+        let interval = setInterval(function(){
             if (progress.value !== 100) {
                 progress.value += 1;
-            }
-            
-        }
-        let interval = setInterval(increase, 100);
-        if (progress.value === 100) {
-            clearInterval(interval)
-        }
-    }
+            } else {
+                clearInterval(interval)
+            }  
+        }, 100);
 
-    function stop(){
-        
     }
 </script>
 
