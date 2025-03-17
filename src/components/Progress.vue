@@ -5,4 +5,14 @@
 </template>
 
 <style lang="css" scoped>
+    progress[value] {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20rem;
+        height: 2rem;
+    }
+
+    progress[value]::-webkit-progress-bar {
+        background-color: #eee;
+    }
 </style>
