@@ -9,40 +9,38 @@ import { users } from './userInfo';
 </script>
 
 <template>
-    <section>
-        <div v-if="active === 'Posts'">
-            <ul>
-                <li v-for="item in user[0].posts" :key="item.id">
-                    <div :style="{backgroundColor: item.img}"></div>
-                </li>
-            </ul>
-        </div>
-        <div v-else-if="active === 'Reels'">
-            <ul>
-                <li v-for="item in user[0].reels" :key="item.id">
-                    <div :style="{backgroundColor: item.img}"></div>
-                </li>
-            </ul>
-        </div>
-        <div v-else-if="active === 'Tagged'">
-            <ul>
-                <li v-for="item in user[0].tagged" :key="item.id">
-                    <div :style="{backgroundColor: item.img}"></div>
-                </li>
-            </ul>
-        </div>
-    </section>
+    <ul v-if="active === 'Posts'">
+        <li v-for="item in user[0].posts" :key="item.id">
+            <button :style="{backgroundColor: item.img}"></button>
+        </li>
+    </ul>
+    <ul v-else-if="active === 'Reels'">
+        <li v-for="item in user[0].reels" :key="item.id">
+            <button :style="{backgroundColor: item.img}"></button>
+        </li>
+    </ul>
+    <ul v-else-if="active === 'Tagged'">
+        <li v-for="item in user[0].tagged" :key="item.id">
+            <button :style="{backgroundColor: item.img}"></button>
+        </li>
+    </ul>
 </template>
 
 <style lang="css" scope>
     ul {
+        width: 100%;
         display: grid;
         grid-template-columns: 12rem 12rem 12rem;
         gap:1rem;
         list-style:none;
-        div {
+        margin: 0;
+        margin-top: 1rem;
+        padding-left: 0;
+        justify-content: center;
+        button {
             height: 16rem;
             width: 12rem;
+            cursor: pointer;
         }
     }
 </style>
