@@ -1,4 +1,8 @@
-<script lang="ts"></script>
+<script lang="ts" setup>
+    const props = defineProps({
+        active: String,
+    })
+</script>
 
 <template>
     <section>
@@ -8,4 +12,4 @@
     </section>
 </template>
 
-<style lang="css"></style>
+<style lang="css" scope></style>
