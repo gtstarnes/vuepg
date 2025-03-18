@@ -17,8 +17,20 @@ import { users } from './userInfo';
                 </li>
             </ul>
         </div>
-        <div v-else-if="active === 'Reels'">Reels</div>
-        <div v-else-if="active === 'Tagged'">Tagged</div>
+        <div v-else-if="active === 'Reels'">
+            <ul>
+                <li v-for="item in user[0].reels" :key="item.id">
+                    <div :style="{backgroundColor: item.img}"></div>
+                </li>
+            </ul>
+        </div>
+        <div v-else-if="active === 'Tagged'">
+            <ul>
+                <li v-for="item in user[0].tagged" :key="item.id">
+                    <div :style="{backgroundColor: item.img}"></div>
+                </li>
+            </ul>
+        </div>
     </section>
 </template>
 
