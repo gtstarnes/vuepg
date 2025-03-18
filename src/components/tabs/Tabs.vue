@@ -25,4 +25,11 @@ function changeActive(tab:string) {
 </template>
 
 <style lang="css" scoped>
+    section {
+        div {
+            width: 100%;
+            height: 2rem;
+            box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+        }
+    }
 </style>
