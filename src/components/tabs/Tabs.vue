@@ -30,6 +30,15 @@ function changeActive(tab:string) {
             width: 100%;
             height: 2rem;
             box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        button {
+            background-color: inherit;
+            border: none;
+            cursor: pointer;
         }
     }
 </style>
