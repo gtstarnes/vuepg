@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 import { users } from './userInfo';
+import Display from './Display.vue';
 
 
 const user = ref(users)
@@ -19,11 +20,7 @@ function changeActive(tab:string) {
         <div>
             <button v-for="tab in tabs" :key="tab" @click="changeActive(tab)">{{ tab }}</button>
         </div>
-        <section>
-            <div v-if="active === 'Posts'">Posts</div>
-            <div v-else-if="active === 'Reels'">Reels</div>
-            <div v-else-if="active === 'Tagged'">Tagged</div>
-        </section>
+        <Display :active />
     </section>
 </template>
 
