@@ -20,7 +20,8 @@
         justify-content: center;
         align-items: center;
         width: 99vw;
-        height: 90vh;
+        height: 100vh;
+        padding-top: 1rem;
         
         ul {
             margin: 0;
