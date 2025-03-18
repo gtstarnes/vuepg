@@ -6,12 +6,18 @@ import { users } from './userInfo';
 const user = ref(users)
 const tabs = ref(["Posts", "Reels", "Tagged"])
 const active = ref("Posts")
+
+function changeActive(tab:string) {
+    if (active.value !== tab) {
+        active.value = tab
+    }
+}
 </script>
 
 <template>
     <section>
         <div>
-            <button v-for="tab in tabs" :key="tab">{{ tab }}</button>
+            <button v-for="tab in tabs" :key="tab" @click="changeActive(tab)">{{ tab }}</button>
         </div>
         <section>
             <div v-if="active === 'Posts'">Posts</div>
