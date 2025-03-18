@@ -13,7 +13,7 @@ import { users } from './userInfo';
         <div v-if="active === 'Posts'">
             <ul>
                 <li v-for="item in user[0].posts" :key="item.id">
-                    <div :style="{backgroundColor: item.img}">{{ item.img }}</div>
+                    <div :style="{backgroundColor: item.img}"></div>
                 </li>
             </ul>
         </div>
@@ -23,5 +23,14 @@ import { users } from './userInfo';
 </template>
 
 <style lang="css" scope>
-
+    ul {
+        display: grid;
+        grid-template-columns: 12rem 12rem 12rem;
+        gap:1rem;
+        list-style:none;
+        div {
+            height: 16rem;
+            width: 12rem;
+        }
+    }
 </style>
