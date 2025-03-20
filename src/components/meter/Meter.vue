@@ -1,7 +1,9 @@
-<script lang="ts">
+<script lang="ts" setup>
 </script>
 
-<template></template>
+<template>
+    <meter max="100" min="0" value="50">50</meter>
+</template>
 
 
-<style lang="css"></style>
+<style lang="css" scoped></style>
