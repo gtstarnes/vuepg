@@ -1,13 +1,22 @@
 <script lang="ts" setup>
-import { ref } from 'vue';
+import { computed, ref } from 'vue';
 
     const a = ref(0);
     const b = ref(0);
+    const percentA = computed(() => {
+        return a.value / 100; 
+    })
 </script>
 
 <template>
-    <meter max="100" min="0" value="50">50</meter>
-    <meter max="100" min="0" value="50">50</meter>
+    <div>
+        <span class="option">
+            <meter  max="1" value="0.5"></meter>
+            <button type="button"></button> 
+        </span>
+            <meter  max='1' min="0" value="0.5"></meter>
+
+    </div>
 </template>
 
 
