@@ -6,13 +6,22 @@ import { computed, ref } from 'vue';
     const percentA = computed(() => {
         return a.value / 100; 
     })
+
+    function vote(option: 'a' | 'b') {
+        if (option === 'a'){
+            a.value++
+        }
+        if (option === 'b'){
+            b.value++
+        }
+    }
 </script>
 
 <template>
     <div>
         <span class="option">
-            <meter  max="1" value="0.5"></meter>
-            <button type="button">Vote for A</button> 
+            <meter  max="1" :value="percentA"></meter>
+            <button type="button" @click="vote('a')">Vote for A</button> 
         </span>
         <span class="option">
             <meter  max='1' min="0" value="0.5"></meter>
