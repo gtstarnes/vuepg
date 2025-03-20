@@ -7,6 +7,7 @@ import DefList from "../components/DefList.vue";
 import Home from "../components/home/Home.vue";
 import Progress from "../components/Progress.vue";
 import Tabs from "../components/tabs/Tabs.vue";
+import Meter from "../components/meter/Meter.vue"
 
 export const routes = [
     {path: '/', name: 'Home', component: Home},
@@ -17,6 +18,7 @@ export const routes = [
     {path: '/deflist', name: 'Lists',  component: DefList},
     {path: '/progress', name: 'Progress', component: Progress},
     {path: '/tabs', name: 'Tabs', component: Tabs},
+    {path: '/meter', name: 'Meter', component: Meter},
 ]
 
 const router = createRouter({
