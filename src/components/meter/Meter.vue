@@ -3,11 +3,14 @@ import { computed, ref } from 'vue';
 
     const a = ref(0);
     const b = ref(0);
+    const total = computed(() => {
+        return a.value + b.value
+    })
     const percentA = computed(() => {
-        return a.value / 100; 
+        return a.value / total.value || 0; 
     })
     const percentB = computed(() => {
-        return b.value / 100; 
+        return b.value / total.value || 0; 
     })
 
     function vote(option: 'a' | 'b') {
