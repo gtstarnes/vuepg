@@ -42,3 +42,9 @@ const users: User[] = [
         pic: 'purple'
     },
 ]
+
+
+
+function getUser(index: number){
+    return users[index];
+}
