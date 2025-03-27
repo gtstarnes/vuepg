@@ -20,7 +20,7 @@ const users: User[] = [
         links: [
             {
                 title: 'GitHub',
-                href: '#'
+                href: 'https://github.com'
             },
             {
                 title: 'Frontend Mentor',
@@ -28,15 +28,15 @@ const users: User[] = [
             },
             {
                 title: 'LinkedIn',
-                href: '#'
+                href: 'https://linkedin.com'
             },
             {
                 title: 'Twitter',
-                href: '#'
+                href: 'https://x.com'
             },
             {
                 title: 'Instagram',
-                href: '#'
+                href: 'https://instagram.com'
             },
         ],
         pic: 'purple'
