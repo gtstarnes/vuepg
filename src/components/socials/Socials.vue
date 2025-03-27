@@ -39,7 +39,7 @@ import SocialLink from './SocialLink.vue';
             width: 16rem;
             height: auto;
             background-color: rgb(49, 48, 48);
-            border-radius: 20px;
+            border-radius: 18px;
             padding: 2rem;
             align-items: center;
 
