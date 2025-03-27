@@ -1,5 +1,9 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+    defineProps(['title', 'href'])
+</script>
 
-<template></template>
+<template>
+    <a :href="href"> {{ title }}</a>
+</template>
 
 <style lang="css" scoped></style>
