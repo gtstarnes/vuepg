@@ -43,8 +43,12 @@ const users: User[] = [
     },
 ]
 
-
+function getUsers() {
+    return users
+}
 
 function getUser(index: number){
     return users[index];
 }
+
+export default { getUsers, getUser}
