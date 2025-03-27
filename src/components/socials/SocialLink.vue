@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <button><a :href="href"> {{ title }}</a></button>
+    <a :href="href" target="_blank" rel="noopener noreferrer">{{ title }}</a>
 </template>
 
 <style lang="css" scoped>
@@ -11,13 +11,15 @@
         text-decoration: none;
         color: white;
         font-weight: bold;
-        width: 100%;
-    }
-    button {
-        background-color: rgb(80, 80, 80);
+        width: 100%;        
+        background-color: grey;
         height: 3rem;
         border: none;
         border-radius:  8px;
         width: 15rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    
     }
 </style>
