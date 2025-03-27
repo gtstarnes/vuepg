@@ -8,6 +8,7 @@ import Home from "../components/home/Home.vue";
 import Progress from "../components/Progress.vue";
 import Tabs from "../components/tabs/Tabs.vue";
 import Meter from "../components/meter/Meter.vue"
+import Socials from "../components/socials/Socials.vue";
 
 export const routes = [
     {path: '/', name: 'Home', component: Home},
@@ -19,6 +20,7 @@ export const routes = [
     {path: '/progress', name: 'Progress', component: Progress},
     {path: '/tabs', name: 'Tabs', component: Tabs},
     {path: '/meter', name: 'Meter', component: Meter},
+    {path: '/socials', name: 'Socials', component: Socials},
 ]
 
 const router = createRouter({
