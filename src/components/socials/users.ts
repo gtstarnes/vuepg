@@ -4,9 +4,41 @@ type User = {
     country: string,
     bio: string,
     links: Links[],
-    pic: 'purple'
+    pic: string
 }
 type Links = {
     title: string,
     href: string,
 }
+
+const users: User[] = [
+    {
+        name: 'Jessica Randall',
+        city: 'London',
+        country: 'United Kingdom',
+        bio: 'Front-end developer and avid reader.',
+        links: [
+            {
+                title: 'GitHub',
+                href: '#'
+            },
+            {
+                title: 'Frontend Mentor',
+                href: '#'
+            },
+            {
+                title: 'LinkedIn',
+                href: '#'
+            },
+            {
+                title: 'Twitter',
+                href: '#'
+            },
+            {
+                title: 'Instagram',
+                href: '#'
+            },
+        ],
+        pic: 'purple'
+    },
+]
