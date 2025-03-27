@@ -4,6 +4,7 @@ type User = {
     country: string,
     bio: string,
     links: Links[],
+    pic: 'purple'
 }
 type Links = {
     title: string,
