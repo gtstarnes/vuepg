@@ -48,7 +48,7 @@ function getUsers() {
 }
 
 function getUser(index: number){
-    return users[index];
+    return users[index] || null;
 }
 
-export default { getUsers, getUser}
+export { getUsers, getUser}
