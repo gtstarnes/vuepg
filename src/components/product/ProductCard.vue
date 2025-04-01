@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-    import { getProduct } from './productInfo';
+    import ProductButton from './ProductButton.vue';
+import { getProduct } from './productInfo';
 
 
     const {category, name, des, price, ogPrice, img} = getProduct(0)
@@ -17,6 +18,7 @@
                     <span class="price">{{ price }}</span>
                     <span class="og">{{ ogPrice }}</span>
                 </div>
+                <ProductButton />
             </div>
         </article>
     </section>
