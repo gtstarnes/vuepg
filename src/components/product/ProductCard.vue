@@ -1,17 +1,21 @@
 <script lang="ts" setup>
+    import { getProduct } from './productInfo';
+
+
+    const {category, name, des, price, ogPrice, img} = getProduct(0)
 </script>
 
 <template>
     <section>
         <article>
-            <div></div>
+            <div :style="{backgroundColor: img}"></div>
             <div>
-                <h5></h5>
-                <h1></h1>
-                <p></p>
+                <h5>{{ category }}</h5>
+                <h1>{{ name }}</h1>
+                <p>{{ des }}</p>
                 <div>
-                    <span></span>
-                    <span></span>
+                    <span>{{ price }}</span>
+                    <span>{{ ogPrice }}</span>
                 </div>
             </div>
         </article>
