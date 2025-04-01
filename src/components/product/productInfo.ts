@@ -8,6 +8,8 @@ const products = [
     },
 ]
 
+function getProduct(index: number){
+    return products[index]
+}
 
-
-export {products}
+export {products, getProduct}
