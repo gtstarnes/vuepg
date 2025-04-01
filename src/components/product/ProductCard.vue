@@ -23,4 +23,11 @@
 </template>
 
 <style lang="css" scoped>
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 95dvh;
+        width: 80dvw;
+    }
 </style>
