@@ -33,10 +33,49 @@
             border-radius: 10px;
             overflow: hidden;
             padding: 0;
+            display: flex;
+            flex-direction: column;
 
             .img {
             height: 18rem;
             width: 100%;
+            }
+
+            .info {
+                padding-left: 1rem;
+                padding-right: 1rem;
+                background-color: white;
+                height: 100%;
+
+                .cate {
+                    color: grey;
+                }
+
+                .name {
+                    font-size: 2.5rem;
+                }
+
+                .des {
+                    color:grey;
+                    font-size: 1.2rem;
+                }
+
+                .prices {
+                    display: flex;
+                    align-items: center;
+                    gap: 1.5rem;
+
+                    .price {
+                        color: green;
+                        font-size: 2.2rem;
+                        font-weight: bold;
+                    }
+
+                    .og {
+                        color:grey;
+                        text-decoration: line-through;
+                    }
+                }
             }
         }
 
