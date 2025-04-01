@@ -8,14 +8,14 @@
 <template>
     <section>
         <article>
-            <div :style="{backgroundColor: img}"></div>
-            <div>
-                <h5>{{ category }}</h5>
-                <h1>{{ name }}</h1>
-                <p>{{ des }}</p>
-                <div>
-                    <span>{{ price }}</span>
-                    <span>{{ ogPrice }}</span>
+            <div class="img" :style="{backgroundColor: img}"></div>
+            <div class="info">
+                <h5 class="cate">{{ category }}</h5>
+                <h1 class="name">{{ name }}</h1>
+                <p class="des">{{ des }}</p>
+                <div class="prices">
+                    <span class="price">{{ price }}</span>
+                    <span class="og">{{ ogPrice }}</span>
                 </div>
             </div>
         </article>
