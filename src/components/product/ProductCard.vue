@@ -10,7 +10,7 @@
         <article>
             <div class="img" :style="{backgroundColor: img}"></div>
             <div class="info">
-                <h5 class="cate">{{ category }}</h5>
+                <h5 class="cate">{{ category.toUpperCase() }}</h5>
                 <h1 class="name">{{ name }}</h1>
                 <p class="des">{{ des }}</p>
                 <div class="prices">
@@ -25,9 +25,20 @@
 <style lang="css" scoped>
     section {
         display: flex;
-        align-items: center;
         justify-content: center;
         height: 95dvh;
-        width: 80dvw;
+        
+        article {
+            width: 90dvw;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 0;
+
+            .img {
+            height: 18rem;
+            width: 100%;
+            }
+        }
+
     }
 </style>
