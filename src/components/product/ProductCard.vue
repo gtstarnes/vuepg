@@ -39,7 +39,7 @@ import { getProduct } from './productInfo';
             flex-direction: column;
 
             .img {
-            height: 18rem;
+            height: 24rem;
             width: 100%;
             }
 
@@ -48,18 +48,25 @@ import { getProduct } from './productInfo';
                 padding-right: 1rem;
                 background-color: white;
                 height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
 
                 .cate {
                     color: grey;
+                    font-size: 1rem;
+                    margin: 0;
                 }
 
                 .name {
                     font-size: 2.5rem;
+                    margin: 0;
                 }
 
                 .des {
                     color:grey;
                     font-size: 1.2rem;
+                    margin: 0;
                 }
 
                 .prices {
