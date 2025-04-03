@@ -5,5 +5,12 @@
 </template>
 
 <style lang="css" scoped>
-
+    button {
+        background-color: orange;
+        color: black;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        height: 2rem;
+    }
 </style>
