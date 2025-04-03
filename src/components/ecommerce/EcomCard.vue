@@ -14,11 +14,19 @@ import EcomCount from './EcomCount.vue';
             <div></div>
         </span>
         <div></div>
-        <span>
+        <span class="controls">
             <EcomCount />
             <EcomButton />
         </span>
     </article>
 </template>
 
-<style lang="css" scoped></style>
+<style lang="css" scoped>
+    article {
+
+        .controls {
+            display: flex;
+            gap: 1rem;
+        }
+    }
+</style>
