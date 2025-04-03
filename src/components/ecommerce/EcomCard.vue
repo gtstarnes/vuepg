@@ -12,14 +12,18 @@ import { productInfo } from './ecomInfo';
 
 <template>
     <article>
-        <h6>{{ company }}</h6>
-        <h1>{{ name }}</h1>
+        <span>
+            <h4>{{ company }}</h4>
+            <h1>{{ name }}</h1>
+        </span>
         <p>{{ des }}</p>
         <span>
-            <div>${{ price }}</div>
-            <div>{{ discount * 100 }}%</div>
+            <span class="price">
+                <div class="price-price">${{ price }}</div>
+                <div class="price-discount">{{ discount * 100 }}%</div>
+            </span>
+            <span class="price-og">${{ ogPrice }}</span>
         </span>
-        <div>${{ ogPrice }}</div>
         <span class="controls">
             <EcomCount />
             <EcomButton />
@@ -29,6 +33,31 @@ import { productInfo } from './ecomInfo';
 
 <style lang="css" scoped>
     article {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 50%;
+        .price {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+
+            .price-price {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+            .price-discount {
+                background-color: black;
+                color: white;
+                width: 2.5rem;
+                border-radius: 2px;
+                text-align: center;
+            }
+            .price-og {
+                color:grey;
+                text-decoration: line-through;
+            }
+        }
 
         .controls {
             display: flex;
