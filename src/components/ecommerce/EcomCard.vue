@@ -12,14 +12,14 @@ import { productInfo } from './ecomInfo';
 
 <template>
     <article>
-        <h6></h6>
-        <h1></h1>
-        <p></p>
+        <h6>{{ company }}</h6>
+        <h1>{{ name }}</h1>
+        <p>{{ des }}</p>
         <span>
-            <div></div>
-            <div></div>
+            <div>${{ price }}</div>
+            <div>{{ discount * 100 }}%</div>
         </span>
-        <div></div>
+        <div>${{ ogPrice }}</div>
         <span class="controls">
             <EcomCount />
             <EcomButton />
