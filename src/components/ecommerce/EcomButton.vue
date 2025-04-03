@@ -1,5 +1,9 @@
 <script lang="ts" setup></script>
 
-<template></template>
+<template>
+    <button>Add to Cart</button>
+</template>
 
-<style lang="css" scoped></style>
+<style lang="css" scoped>
+
+</style>
