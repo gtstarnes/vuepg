@@ -16,11 +16,30 @@ import { ref } from 'vue';
 </script>
 
 <template>
-    <div>
+    <div class="container">
         <button @click="subtract">-</button>
-        <div>{{ count }}</div>
+        <div class="count">{{ count }}</div>
         <button @click="add">+</button>
     </div>
 </template>
 
-<style lang="css" scoped></style>
+<style lang="css" scoped>
+    .container {
+        display: flex;
+        background-color: rgb(199, 198, 198);
+        width: 8rem;
+        align-items: center;
+        justify-content: space-evenly;
+        font-weight: bold;
+        border-radius: 4px;
+
+        button {
+            background-color: inherit;
+            border:none;
+            color: orange;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+</style>
