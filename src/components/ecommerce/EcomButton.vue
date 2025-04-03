@@ -12,5 +12,6 @@
         border-radius: 4px;
         cursor: pointer;
         height: 2rem;
+        width: 8rem;
     }
 </style>
