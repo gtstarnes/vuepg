@@ -10,3 +10,5 @@ const productInfo = {
     price: 125.00,
     discount: 0.5,
 }
+
+export {user, productInfo}
