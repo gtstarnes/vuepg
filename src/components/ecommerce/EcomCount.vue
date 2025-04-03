@@ -3,13 +3,23 @@ import { ref } from 'vue';
 
 
     const count = ref(0);
+
+    function add() {
+        count.value += 1
+    }
+
+    function subtract(){
+        if (count.value > 0){
+            count.value -= 1
+        }
+    }
 </script>
 
 <template>
     <div>
-        <button>-</button>
+        <button @click="subtract">-</button>
         <div>{{ count }}</div>
-        <button>+</button>
+        <button @click="add">+</button>
     </div>
 </template>
 
