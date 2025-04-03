@@ -10,7 +10,8 @@ import Tabs from "../components/tabs/Tabs.vue";
 import Meter from "../components/meter/Meter.vue"
 import Socials from "../components/socials/Socials.vue";
 import ProductCard from "../components/product/ProductCard.vue";
-import EcomCard from "../components/ecommerce/EcomCard.vue";
+import Ecom from "../components/ecommerce/Ecom.vue";
+
 
 export const routes = [
     {path: '/', name: 'Home', component: Home},
@@ -24,7 +25,7 @@ export const routes = [
     {path: '/meter', name: 'Meter', component: Meter},
     {path: '/socials', name: 'Socials', component: Socials},
     {path: '/product', name: 'Product Card', component: ProductCard},
-    {path: '/ecom', name: 'Ecom Card', component: EcomCard},
+    {path: '/ecom', name: 'Ecommerce', component: Ecom},
 ]
 
 const router = createRouter({
