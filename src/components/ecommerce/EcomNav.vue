@@ -1,5 +1,9 @@
 <script lang="ts" setup>
+import { user } from './ecomInfo';
+
     const links = ['Collections', 'Men', 'Women', 'About', 'Contact']
+
+    const {username, profilePic} = user
 </script>
 
 <template>
@@ -11,7 +15,8 @@
             </ul>
         </span>
         <span>
-            <div class="profilePic"></div>
+            <span>{{ username }}</span>
+            <div class="profilePic" :style="{backgroundColor: profilePic}"></div>
         </span>
     </nav>
 </template>
