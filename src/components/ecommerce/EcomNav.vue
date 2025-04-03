@@ -21,4 +21,13 @@ import { user } from './ecomInfo';
     </nav>
 </template>
 
-<style lang="css" scoped></style>
+<style lang="css" scoped>
+    nav {
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+        }
+    }
+</style>
