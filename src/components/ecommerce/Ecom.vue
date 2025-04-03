@@ -17,5 +17,9 @@ import EcomPics from './EcomPics.vue';
     section {
         display: grid;
         grid-template-columns: auto auto;
+        gap: 2rem;
+        justify-items: center;
+        padding-top: 4rem;
+        padding-left: 2rem;
     }
 </style>

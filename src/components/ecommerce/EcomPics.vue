@@ -16,7 +16,7 @@ import { productInfo } from './ecomInfo';
 </script>
 
 <template>
-    <section>
+    <section class="pics">
         <div class="main" :style="{backgroundColor: activePic}"></div>
         <div class="row">
             <div class="other" :class="index===active ? 'active': ''"
@@ -28,7 +28,7 @@ import { productInfo } from './ecomInfo';
 </template>
 
 <style lang="css" scoped>
-    section {
+    .pics {
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -39,7 +39,7 @@ import { productInfo } from './ecomInfo';
             height: 20rem;
             width: 20rem;
             border-radius: 8px;
-            transition: background-color 0.5s ease-in;
+            transition: background-color 0.25s ease-in;
         }
         .other {
             height: 4rem;
@@ -49,7 +49,6 @@ import { productInfo } from './ecomInfo';
         }
         .row {
             display: flex;
-            flex-direction: column;
             gap: 1rem;
             align-items: center;
             justify-content: center;
@@ -57,8 +56,8 @@ import { productInfo } from './ecomInfo';
         .active {
             opacity: 0.5;
             border: 2px solid grey;
-            transition: opacity .5s ease-in;
-            transition: border .5s ease-in;
+            transition: opacity .25s ease-in;
+            transition: border .25s ease-in;
         }
     }
 
