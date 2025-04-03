@@ -1,9 +1,14 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ref } from 'vue';
+
+
+    const count = ref(0);
+</script>
 
 <template>
     <div>
         <button>-</button>
-        <div></div>
+        <div>{{ count }}</div>
         <button>+</button>
     </div>
 </template>
