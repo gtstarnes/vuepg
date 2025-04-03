@@ -10,7 +10,7 @@ import { productInfo } from './ecomInfo';
     })
     function changeActive(index:number){
         if (active.value !== index) {
-            active.value
+            active.value = index
         }
     }
 </script>
@@ -28,6 +28,38 @@ import { productInfo } from './ecomInfo';
 </template>
 
 <style lang="css" scoped>
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
 
+        .main {
+            height: 20rem;
+            width: 20rem;
+            border-radius: 8px;
+            transition: background-color 0.5s ease-in;
+        }
+        .other {
+            height: 4rem;
+            width: 4rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .row {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+        }
+        .active {
+            opacity: 0.5;
+            border: 2px solid grey;
+            transition: opacity .5s ease-in;
+            transition: border .5s ease-in;
+        }
+    }
 
 </style>
