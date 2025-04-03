@@ -13,4 +13,9 @@ import EcomPics from './EcomPics.vue';
     </section>
 </template>
 
-<style lang="css" scoped></style>
+<style lang="css" scoped>
+    section {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+</style>
