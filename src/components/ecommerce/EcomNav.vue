@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import EcomCart from './EcomCart.vue';
 import { user } from './ecomInfo';
 
     const links = ['Collections', 'Men', 'Women', 'About', 'Contact']
@@ -15,6 +16,7 @@ import { user } from './ecomInfo';
             </ul>
         </span>
         <span class="span-right">
+            <EcomCart />
             <span>{{ username }}</span>
             <div class="profilePic" :style="{backgroundColor: profilePic}"></div>
         </span>
