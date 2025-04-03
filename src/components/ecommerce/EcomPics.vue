@@ -1,4 +1,11 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ref } from 'vue';
+import { productInfo } from './ecomInfo';
+
+
+    const pics = productInfo.pics
+    const active = ref(0)
+</script>
 
 <template>
     <div></div>
