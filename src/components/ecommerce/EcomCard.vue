@@ -1,7 +1,13 @@
 <script lang="ts" setup>
+import { computed } from 'vue';
 import EcomButton from './EcomButton.vue';
 import EcomCount from './EcomCount.vue';
+import { productInfo } from './ecomInfo';
 
+    const {company, name, des, price, discount} = productInfo;
+    const ogPrice = computed( () => {
+        return price / discount
+    })
 </script>
 
 <template>
