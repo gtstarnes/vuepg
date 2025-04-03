@@ -5,6 +5,12 @@ import { productInfo } from './ecomInfo';
 
     const pics = productInfo.pics
     const active = ref(0)
+
+    function changeActive(index:number){
+        if (active.value !== index) {
+            active.value
+        }
+    }
 </script>
 
 <template>
@@ -13,7 +19,7 @@ import { productInfo } from './ecomInfo';
         <div class="row">
             <div class="other" :class="index===active ? 'active': ''"
              v-for="(pic, index) in pics" :key="index"
-             :style="{backgroundColor: pic}"></div>
+             :style="{backgroundColor: pic}" @click="changeActive(index)"></div>
         </div>
     </section>
 
