@@ -13,8 +13,7 @@ function toggleState() {
     toggle.state = !toggle.state
 }
 
-const handleSubmit = (e: Event, username:string) => {
-    e.preventDefault()
+const handleSubmit = (username:string) => {
     login.user = username
     login.status = true;
 }
