@@ -1,15 +1,16 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
-import { toggleState } from './store';
+import { handleSubmit, toggleState } from './store';
 
     let details = ref({
         user: '',
         password: ''
     })
+
 </script>
 
 <template>
-    <form>
+    <form @submit.prevent="handleSubmit(details.user)">
         <input type="text" name="user" id="user" 
             placeholder="user" v-model="details.user"/>
         <input type="password" name="password" id="password" 
