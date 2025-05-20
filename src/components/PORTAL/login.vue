@@ -1,4 +1,11 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ref } from 'vue';
+
+    let details = ref({
+        user: '',
+        password: ''
+    })
+</script>
 
 <template>
     <form>
