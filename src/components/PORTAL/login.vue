@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
+import { toggleState } from './store';
 
     let details = ref({
         user: '',
@@ -16,7 +17,7 @@ import { ref } from 'vue';
         <div>
             <button type="submit">Login</button>
             <button type="reset">Cancel</button>
-            <button type="button">Sign Up</button>
+            <button type="button" @click="toggleState">Sign Up</button>
         </div>
     </form>
 </template>
