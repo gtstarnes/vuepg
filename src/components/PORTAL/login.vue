@@ -9,8 +9,10 @@ import { ref } from 'vue';
 
 <template>
     <form>
-        <input type="text" name="user" id="user" placeholder="user"/>
-        <input type="password" name="password" id="password" placeholder="password" />
+        <input type="text" name="user" id="user" 
+            placeholder="user" v-model="details.user"/>
+        <input type="password" name="password" id="password" 
+            placeholder="password" v-model="details.password" />
         <div>
             <button type="submit">Login</button>
             <button type="reset">Cancel</button>
