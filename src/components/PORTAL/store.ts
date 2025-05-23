@@ -22,4 +22,8 @@ function toggleSignUp() {
     signUp = !signUp
 }
 
-export {login, logout, toggleSignUp, signUp, loggedIn}
+function getSignUp(){
+    return signUp
+}
+
+export {login, logout, toggleSignUp, getSignUp, loggedIn}
