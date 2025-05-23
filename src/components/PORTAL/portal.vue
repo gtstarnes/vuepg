@@ -2,12 +2,13 @@
 import { computed } from 'vue';
 import Login from './Login.vue';
 import Signup from './Signup.vue';
-import { loggedIn, getSignUp } from './store';
+import { loggedIn, getSignUp, signUp } from './store';
 
 </script>
 
 <template>
     <section>
+        <div>{{  signUp }}</div>
         <div v-if="loggedIn === false">
             <div v-if="getSignUp() === false">
                 <Login />
@@ -17,7 +18,7 @@ import { loggedIn, getSignUp } from './store';
             </div>
         </div>
         <div v-else>
-    
+            <h1>hello</h1>
         </div>
     </section>
 </template>

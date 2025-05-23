@@ -12,7 +12,7 @@ import { login, toggleSignUp } from './store';
 
 
 <template>
-    <form>
+    <form @submit.prevent="() => login(deets.username)">
         <div>
             <label for="user">
                 Username: 
@@ -28,7 +28,7 @@ import { login, toggleSignUp } from './store';
             </label>
         </div>
         <div>
-            <button type="submit" @click="() => login(deets.username)">Login</button>
+            <button type="submit">Login</button>
             <button type="reset">Cancel</button>
             <button type="button" @click="toggleSignUp">Sign Up</button>
         </div>
