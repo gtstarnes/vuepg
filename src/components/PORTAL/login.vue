@@ -1,4 +1,12 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ref } from 'vue';
+
+
+    let deets = ref({
+        username: '',
+        password: ''
+    })
+</script>
 
 
 <template>
@@ -6,13 +14,15 @@
         <div>
             <label for="user">
                 Username: 
-                <input type="text" name="user" id="user" placeholder="username" />
+                <input type="text" name="user" id="user" 
+                    placeholder="username" v-model="deets.username" />
             </label>
         </div>
         <div>
             <label for="password">
                 Password: 
-                <input type="password" name="password" id="password" placeholder="password" />
+                <input type="password" name="password" id="password" 
+                    placeholder="password" v-model="deets.password" />
             </label>
         </div>
         <div>
