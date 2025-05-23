@@ -18,4 +18,4 @@ function logout(){
     signUp = false;
 }
 
-export {login, logout}
+export {login, logout, signUp, loggedIn}
