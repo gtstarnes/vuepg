@@ -20,10 +20,11 @@ function logout(){
 
 function toggleSignUp() {
     signUp = !signUp
+    console.log(signUp)
 }
 
 function getSignUp(){
     return signUp
 }
 
-export {login, logout, toggleSignUp, getSignUp, loggedIn}
+export {login, logout, toggleSignUp, getSignUp, loggedIn, signUp}

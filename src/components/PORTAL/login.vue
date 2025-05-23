@@ -1,11 +1,13 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
+import { login, toggleSignUp } from './store';
 
 
     let deets = ref({
         username: '',
         password: ''
     })
+
 </script>
 
 
@@ -26,9 +28,9 @@ import { ref } from 'vue';
             </label>
         </div>
         <div>
-            <button type="submit">Login</button>
+            <button type="submit" @click="() => login(deets.username)">Login</button>
             <button type="reset">Cancel</button>
-            <button type="button">Sign Up</button>
+            <button type="button" @click="toggleSignUp">Sign Up</button>
         </div>
     </form>
 </template>
