@@ -18,4 +18,8 @@ function logout(){
     signUp = false;
 }
 
-export {login, logout, signUp, loggedIn}
+function toggleSignUp() {
+    signUp = !signUp
+}
+
+export {login, logout, toggleSignUp, signUp, loggedIn}
