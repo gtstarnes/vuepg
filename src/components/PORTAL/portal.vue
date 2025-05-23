@@ -1,25 +1,24 @@
 <script setup lang="ts">
-import { computed } from 'vue';
 import Login from './Login.vue';
 import Signup from './Signup.vue';
-import { loggedIn, getSignUp, signUp } from './store';
+import { loggedIn, getSignUp} from './store';
+
 
 </script>
 
 <template>
     <section>
-        <div>{{  signUp }}</div>
-        <div v-if="loggedIn === false">
-            <div v-if="getSignUp() === false">
+        <template v-if="loggedIn === false">
+            <template v-if="getSignUp().value === false">
                 <Login />
-            </div>
-            <div v-else-if="getSignUp() === true">
+            </template>
+            <template v-else-if="getSignUp().value === true">
                 <Signup />
-            </div>
-        </div>
-        <div v-else>
-            <h1>hello</h1>
-        </div>
+            </template>
+        </template>
+        <template v-else>
+            Hello
+        </template>
     </section>
 </template>
 

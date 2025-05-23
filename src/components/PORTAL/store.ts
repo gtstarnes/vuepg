@@ -1,26 +1,28 @@
+import { ref } from "vue";
+
 type Login = {
     username: string,
     password: string,
 }
 
-let signUp:boolean = false
-let loggedIn = false;
-let username = ''
+let signUp = ref(false)
+let loggedIn = ref(false)
+let username = ref('')
 
 function login(user:string){
-    username = user;
-    loggedIn = true;
+    username.value = user;
+    loggedIn.value = true;
 }
 
 function logout(){
-    username = '';
-    loggedIn = false;
-    signUp = false;
+    username.value = '';
+    loggedIn.value = false;
+    signUp.value = false;
 }
 
 function toggleSignUp() {
-    signUp = !signUp
-    console.log(signUp)
+    signUp.value = !signUp.value
+    console.log(signUp.value)
 }
 
 function getSignUp(){
