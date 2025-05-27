@@ -11,3 +11,16 @@ let details = ref({
     pass: '',
 })
 let loginStatus = ref(false);
+let portalToggle = ref(false)
+
+
+// getter methods
+function getDetails() {
+    return details
+}
+function getStatus() {
+    return loginStatus
+}
+function getPortal () {
+    return portalToggle
+}
