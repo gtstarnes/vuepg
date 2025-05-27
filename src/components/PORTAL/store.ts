@@ -24,3 +24,14 @@ function getStatus() {
 function getPortal () {
     return portalToggle
 }
+
+// interface
+function changePortal() {
+    portalToggle.value = !portalToggle.value
+}
+function logout() {
+    loginStatus.value = false
+}
+function login() {
+    loginStatus.value = true
+}
