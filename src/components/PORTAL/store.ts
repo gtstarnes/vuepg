@@ -36,6 +36,10 @@ function login(user: string) {
     loginStatus.value = true
     details.value = {...details.value, user: user}
 }
+function signUp(user: string){
+    loginStatus.value = true
+    details.value = {...details.value, user: user}
+}
 
 
 export {
@@ -44,5 +48,6 @@ export {
     getPortal,
     changePortal,
     logout,
-    login
+    login,
+    signUp
 }
