@@ -35,3 +35,13 @@ function logout() {
 function login() {
     loginStatus.value = true
 }
+
+
+export {
+    getDetails,
+    getStatus,
+    getPortal,
+    changePortal,
+    logout,
+    login
+}
