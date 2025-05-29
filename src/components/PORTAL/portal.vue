@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import { getStatus } from './store';
+    import { getPortal, getStatus } from './store';
 
 </script>
 
@@ -9,7 +9,12 @@
         <div>Logged In</div>
     </template>
     <template v-else>
-        
+        <template v-if="getPortal().value === false">
+            <div>Log In</div>
+        </template>
+        <template v-else>
+            <div>Sign Up</div>
+        </template>
     </template>
 </template>
 
