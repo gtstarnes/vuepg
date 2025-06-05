@@ -1,29 +1,34 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import { changePortal, login } from './store';
 
 
 const inputs = ref({
     username: '',
     password: ''
 })
+
+function handleSubmit() {
+    login(inputs.value.username)
+}
 </script>
 
 
 <template>
-    <form>
+    <form @submit.prevent="handleSubmit">
         <div class="inputs">
             <label for="username">Username: </label>
-            <input name="username" id="username" placeholder="username" v-model="inputs.username" />
+            <input type="username" id="username" placeholder="username" v-model="inputs.username" />
         </div>
         <div class="inputs">
             <label for="password">Password: </label>
-            <input name="password" id="password" placeholder="password" v-model="inputs.password" />
+            <input type="password" id="password" placeholder="password" v-model="inputs.password" />
         </div>
         <div class="controls">
             <button type="submit">Login</button>
             <button type="reset">Cancel</button>
         </div>
-        <p>Don't have an account? <button>Sign Up</button></p>
+        <p>Don't have an account? <button type="button" @click="changePortal">Sign Up</button></p>
     </form>
 </template>
 
