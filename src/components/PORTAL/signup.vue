@@ -1,6 +1,12 @@
 <script setup lang="ts">
+import { ref } from 'vue';
 import { changePortal } from './store';
 
+    let details = ref({
+        email: "",
+        user: "",
+        pass: "",
+    })
 </script>
 
 
@@ -8,15 +14,18 @@ import { changePortal } from './store';
     <form>
         <div>
             <label for="email">Email: </label>
-            <input type="email" name="email" placeholder="enter email" />
+            <input type="email" name="email" placeholder="enter email" 
+                v-model="details.email"/>
         </div>
         <div>
             <label for="username">Username: </label>
-            <input type="text" name="username" placeholder="enter username" />
+            <input type="text" name="username" placeholder="enter username" 
+                v-model="details.user" />
         </div>
         <div>
             <label for="password">Password: </label>
-            <input type="passwrod" id="password" name="password" placeholder="enter password" />
+            <input type="passwrod" id="password" name="password" placeholder="enter password" 
+                v-model="details.pass" />
         </div>
         <div>
             <button type="submit">Sign Up</button>
