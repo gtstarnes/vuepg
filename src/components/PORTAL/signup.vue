@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { changePortal } from './store';
+import { changePortal, signUp } from './store';
 
     let details = ref({
         email: "",
@@ -11,7 +11,7 @@ import { changePortal } from './store';
 
 
 <template>
-    <form>
+    <form @submit.prevent="signUp(details.user)">
         <div>
             <label for="email">Email: </label>
             <input type="email" name="email" placeholder="enter email" 
@@ -24,7 +24,7 @@ import { changePortal } from './store';
         </div>
         <div>
             <label for="password">Password: </label>
-            <input type="passwrod" id="password" name="password" placeholder="enter password" 
+            <input type="password" id="password" name="password" placeholder="enter password" 
                 v-model="details.pass" />
         </div>
         <div>
