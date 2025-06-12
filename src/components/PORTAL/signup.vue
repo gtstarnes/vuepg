@@ -42,6 +42,7 @@ import { changePortal, signUp } from './store';
         .input {
             display: flex;
             justify-content: space-between;
+            margin-bottom: 3px;
         }
 
         .toggle {
