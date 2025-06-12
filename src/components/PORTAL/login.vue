@@ -18,11 +18,13 @@ function handleSubmit() {
     <form @submit.prevent="handleSubmit">
         <div class="inputs">
             <label for="username">Username: </label>
-            <input type="username" id="username" placeholder="username" v-model="inputs.username" />
+            <input type="username" id="username" aria-required="true" 
+                placeholder="username" v-model="inputs.username" />
         </div>
         <div class="inputs">
             <label for="password">Password: </label>
-            <input type="password" id="password" placeholder="password" v-model="inputs.password" />
+            <input type="password" id="password" aria-required="true" 
+                placeholder="password" v-model="inputs.password" />
         </div>
         <div class="controls">
             <button type="submit">Login</button>
