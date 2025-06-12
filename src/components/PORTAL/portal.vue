@@ -1,5 +1,6 @@
 <script setup lang="ts">
     import Login from './Login.vue';
+import Signup from './Signup.vue';
 import { getPortal, getStatus } from './store';
 
 </script>
@@ -14,7 +15,7 @@ import { getPortal, getStatus } from './store';
             <Login />
         </template>
         <template v-else>
-            <div>Sign Up</div>
+            <Signup />
         </template>
     </template>
 </template>
