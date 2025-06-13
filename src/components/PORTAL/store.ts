@@ -18,6 +18,9 @@ let portalToggle = ref(false)
 function getDetails() {
     return details
 }
+function getUser() {
+    return details.value.user
+}
 function getStatus() {
     return loginStatus
 }
@@ -47,6 +50,7 @@ export {
     getDetails,
     getStatus,
     getPortal,
+    getUser,
     changePortal,
     logout,
     login,
