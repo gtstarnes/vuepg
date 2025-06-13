@@ -15,17 +15,17 @@ import { changePortal, signUp } from './store';
         <div class="input">
             <label for="email">Email: </label>
             <input type="email" name="email" placeholder="enter email" 
-                v-model="details.email"/>
+                v-model="details.email" aria-required="false"/>
         </div>
         <div class="input">
             <label for="username">Username: </label>
             <input type="text" name="username" placeholder="enter username" 
-                v-model="details.user" />
+                v-model="details.user" aria-required="true"/>
         </div>
         <div class="input">
             <label for="password">Password: </label>
             <input type="password" id="password" name="password" placeholder="enter password" 
-                v-model="details.pass" />
+                v-model="details.pass" aria-required="true" />
         </div>
         <div class="controls">
             <button type="submit">Sign Up</button>
