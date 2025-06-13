@@ -1,5 +1,6 @@
 <script setup lang="ts">
-    import Login from './Login.vue';
+    import Dash from './Dash.vue';
+import Login from './Login.vue';
 import Signup from './Signup.vue';
 import { getPortal, getStatus } from './store';
 
@@ -8,7 +9,7 @@ import { getPortal, getStatus } from './store';
 
 <template>
     <template v-if="getStatus().value === true">
-        <div>Logged In</div>
+        <Dash />
     </template>
     <template v-else>
         <template v-if="getPortal().value === false">
