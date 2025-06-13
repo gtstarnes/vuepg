@@ -31,6 +31,7 @@ function changePortal() {
 }
 function logout() {
     loginStatus.value = false
+    details.value = {user: '', pass: ''}
 }
 function login(user: string) {
     loginStatus.value = true
