@@ -74,3 +74,8 @@ const user:User = {
     reels: genPosts(100),
     tagged: genPosts(100),
 }
+function getUser():User{
+    return user
+}
+
+export {getUser, getTabs, getActiveTab}
