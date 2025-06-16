@@ -16,6 +16,7 @@ type UserMeta = {
     reels: Post[],
     tagged: Post[],
 }
+type Tab = 'Posts' | 'Reels' | 'Tagged'
 
 function randomNum(n:number) {
     return Math.floor(Math.random() * (n+1))
@@ -28,5 +29,18 @@ function randomColor() {
     }
     return color
 }
+
+//TABS INTERFACE
 const tabs = ['Posts', 'Reels','Tagged']
 let activeTab = ref('Posts')
+function getTabs() {
+    return tabs
+}
+function getActiveTab() {
+    return activeTab
+}
+function changeTab(t:Tab){
+    if (t !== activeTab.value){
+        activeTab.value = t
+    }
+}
