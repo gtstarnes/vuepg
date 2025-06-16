@@ -19,3 +19,11 @@ type UserMeta = {
 function randomNum(n:number) {
     return Math.floor(Math.random() * (n+1))
 }
+function randomColor() {
+    let letters = '0123456789ABCDEF'
+    let color = "#"
+    for(let i=0;i < 6; i++){
+        color += letters[Math.floor(Math.random()*16)]
+    }
+    return color
+}
