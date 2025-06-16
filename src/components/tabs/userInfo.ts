@@ -54,3 +54,11 @@ function createPost():Post {
         comments:randomNum(500),
     }
 }
+function genPosts(n:number):Post[] {
+    let posts: Post[] = [];
+    let i = 0;
+    while (i < n) {
+        posts[i] = createPost()
+    }
+    return posts
+}
