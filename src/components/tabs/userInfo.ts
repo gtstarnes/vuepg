@@ -1,3 +1,5 @@
+import { ref } from "vue"
+
 type Post = {
     id:number,
     img:string,
@@ -13,7 +15,6 @@ type UserMeta = {
     posts: Post[],
     reels: Post[],
     tagged: Post[],
-
 }
 
 function randomNum(n:number) {
@@ -27,3 +28,5 @@ function randomColor() {
     }
     return color
 }
+const tabs = ['Posts', 'Reels','Tagged']
+let activeTab = ref('Posts')
