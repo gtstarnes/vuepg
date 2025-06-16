@@ -7,9 +7,10 @@ type Post = {
     comments:number
 }
 
-type UserMeta = {
+type User = {
     name:string,
     username:string,
+    pic:string,
     followers:number,
     following:number,
     posts: Post[],
@@ -59,6 +60,17 @@ function genPosts(n:number):Post[] {
     let i = 0;
     while (i < n) {
         posts[i] = createPost()
+        i++
     }
     return posts
+}
+const user:User = {
+    name: "Bob Ducca",
+    username: "AzzClappa3000",
+    pic: randomColor(),
+    followers: randomNum(10000),
+    following: randomNum(10000),
+    posts: genPosts(100),
+    reels: genPosts(100),
+    tagged: genPosts(100),
 }
