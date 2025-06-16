@@ -44,3 +44,13 @@ function changeTab(t:Tab){
         activeTab.value = t
     }
 }
+
+// Creation Methods
+function createPost():Post {
+    return {
+        id: randomNum(1000),
+        img: randomColor(),
+        likes:randomNum(500),
+        comments:randomNum(500),
+    }
+}
