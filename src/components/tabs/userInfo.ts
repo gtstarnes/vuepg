@@ -15,3 +15,7 @@ type UserMeta = {
     tagged: Post[],
 
 }
+
+function randomNum(n:number) {
+    return Math.floor(Math.random() * (n+1))
+}
