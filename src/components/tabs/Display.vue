@@ -12,18 +12,35 @@ import { changeTab, getActiveTab, getTabs, getUser } from './userInfo';
 
 <template>
     <section>    
-        <div>
+        <div class="tabs">
             <button v-for="tab in tabs" @click="changeTab(tab)">{{ tab }}</button>
         </div>
-        <template class="display" v-if="active === 'Posts'">
-            <button class="post" v-for="post in posts"></button>
+        <template v-if="active === 'Posts'">
+            <div class="display">
+            <button class="post" v-for="({img, likes, comments}) in posts" 
+                :style="{backgroundColor: img}">
+                    <div class="PostInfo">
+                        <span>{{ likes }}</span>
+                        <span>{{ comments }}</span>
+                    </div>
+            </button>
+            </div>
         </template>
-        <template class="display" v-else-if="active === 'Reels'">
-            <button class="post" v-for="reel in reels"></button>
+        <template v-else-if="active === 'Reels'">
+            <div class="display">
+                <button class="post" v-for="({img, likes, comments}) in reels" 
+                    :style="{backgroundColor: img}">
+                    <div class="PostInfo">
+                        <span>{{ likes }}</span>
+                        <span>{{ comments }}</span>
+                    </div>
+                </button>
+            </div>
         </template>
         <template  v-else-if="active === 'Tagged'">
             <div class="display">
-                <button class="post" v-for="({img, likes, comments}) in tagged" :style="{backgroundColor: img}">
+                <button class="post" v-for="({img, likes, comments}) in tagged" 
+                    :style="{backgroundColor: img}">
                     <div class="PostInfo">
                         <span>{{ likes }}</span>
                         <span>{{ comments }}</span>
@@ -63,5 +80,8 @@ import { changeTab, getActiveTab, getTabs, getUser } from './userInfo';
         opacity: 0.5;
         color: white;
         font-weight: bold;
+    }
+    .tabs {
+        
     }
 </style>
