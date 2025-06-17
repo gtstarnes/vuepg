@@ -70,9 +70,9 @@ const user:User = {
     pic: randomColor(),
     followers: randomNum(10000),
     following: randomNum(10000),
-    posts: genPosts(100),
-    reels: genPosts(100),
-    tagged: genPosts(100),
+    posts: genPosts(randomNum(100)),
+    reels: genPosts(randomNum(100)),
+    tagged: genPosts(randomNum(100)),
 }
 function getUser():User{
     return user
