@@ -15,18 +15,53 @@ import { changeTab, getActiveTab, getTabs, getUser } from './userInfo';
         <div>
             <button v-for="tab in tabs" @click="changeTab(tab)">{{ tab }}</button>
         </div>
-        <template v-if="active === 'Posts'">
-            <button v-for="post in posts"></button>
+        <template class="display" v-if="active === 'Posts'">
+            <button class="post" v-for="post in posts"></button>
         </template>
-        <template v-else-if="active === 'Reels'">
-            <button v-for="reel in reels"></button>
+        <template class="display" v-else-if="active === 'Reels'">
+            <button class="post" v-for="reel in reels"></button>
         </template>
-        <template v-else-if="active === 'Tagged'">
-            <button v-for="t in tagged"></button>
+        <template  v-else-if="active === 'Tagged'">
+            <div class="display">
+                <button class="post" v-for="({img, likes, comments}) in tagged" :style="{backgroundColor: img}">
+                    <div class="PostInfo">
+                        <span>{{ likes }}</span>
+                        <span>{{ comments }}</span>
+                    </div>
+                </button>
+            </div>
         </template>  
     </section>
 </template>
 
 <style lang="css" scope>
-    
+    .display {
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+    }
+    .post {
+        height: 300px;
+        width: 200px;
+        border: none;
+        padding: 0;
+    }
+    .post:hover {
+        cursor: pointer;
+    }
+    .PostInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .PostInfo:hover {
+        background-color: black;
+        opacity: 0.5;
+        color: white;
+        font-weight: bold;
+    }
 </style>
