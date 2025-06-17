@@ -82,6 +82,19 @@ import { changeTab, getActiveTab, getTabs, getUser } from './userInfo';
         font-weight: bold;
     }
     .tabs {
-        
+        width:100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-top: 1px solid black;
+        margin-top: 1rem;
+
+        button {
+            background-color: inherit;
+            border: none;
+            cursor: pointer;
+            height: 100%;
+        }
     }
 </style>
