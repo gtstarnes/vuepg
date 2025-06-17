@@ -1,9 +1,11 @@
 <script lang="ts" setup>
-    import Head from './Head.vue';
+    import Display from './Display.vue';
+import Head from './Head.vue';
 </script>
 
 <template>
     <Head />
+    <Display />
 </template>
 
 <style lang="css" scoped>
