@@ -40,7 +40,7 @@ function getTabs() {
 function getActiveTab() {
     return activeTab
 }
-function changeTab(t:Tab){
+function changeTab(t:string){
     if (t !== activeTab.value){
         activeTab.value = t
     }
@@ -78,4 +78,4 @@ function getUser():User{
     return user
 }
 
-export {getUser, getTabs, getActiveTab}
+export {getUser, getTabs, getActiveTab, changeTab}
