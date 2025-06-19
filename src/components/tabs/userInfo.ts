@@ -78,4 +78,4 @@ function getUser():User{
     return user
 }
 
-export {getUser, getTabs, getActiveTab, changeTab}
+export {getUser, getTabs, getActiveTab, changeTab, type Post}
