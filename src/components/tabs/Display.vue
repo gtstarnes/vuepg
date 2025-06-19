@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 import { changeTab, getActiveTab, getTabs, getUser } from './userInfo';
+import Posts from './Posts.vue';
 
     const user = ref(getUser())
     const tabs = ref(getTabs())
@@ -16,15 +17,7 @@ import { changeTab, getActiveTab, getTabs, getUser } from './userInfo';
             <button v-for="tab in tabs" @click="changeTab(tab)">{{ tab }}</button>
         </div>
         <template v-if="active === 'Posts'">
-            <div class="display">
-            <button class="post" v-for="({img, likes, comments}) in posts" 
-                :style="{backgroundColor: img}">
-                    <div class="PostInfo">
-                        <span>{{ likes }}</span>
-                        <span>{{ comments }}</span>
-                    </div>
-            </button>
-            </div>
+            <Posts :posts="posts" />
         </template>
         <template v-else-if="active === 'Reels'">
             <div class="display">
