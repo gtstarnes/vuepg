@@ -17,9 +17,9 @@ import { ref } from 'vue';
 
 <template>
     <div class="container">
-        <button>-</button>
-        <span>0</span>
-        <button>+</button>
+        <button @click="minus">-</button>
+        <span>{{ count }}</span>
+        <button @click="add">+</button>
     </div>
 </template>
 
