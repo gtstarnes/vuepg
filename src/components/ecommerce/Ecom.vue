@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import EcomCard from './EcomCard.vue';
+import EcomNav from './EcomNav.vue';
 
 
 
@@ -8,7 +9,10 @@ import EcomCard from './EcomCard.vue';
 </script>
 
 <template>
-    <EcomCard />
+    <EcomNav />
+    <section>
+        <EcomCard />
+    </section>
 </template>
 
 <style lang="css" scoped>
