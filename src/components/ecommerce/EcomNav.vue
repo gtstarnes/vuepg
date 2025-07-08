@@ -16,5 +16,9 @@ import EcomCart from './EcomCart.vue';
 </template>
 
 <style lang="css" scoped>
-
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 </style>
