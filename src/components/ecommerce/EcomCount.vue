@@ -38,8 +38,9 @@ import { ref } from 'vue';
         height: 2em;
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 0.75em;
+        justify-content: space-between;
         border-radius: 4px;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 </style>
