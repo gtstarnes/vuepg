@@ -1,5 +1,18 @@
 <script lang="ts" setup>
+import { ref } from 'vue';
 
+    let count = ref(0);
+
+    function add(){
+        count.value++
+    }
+    function minus(){
+        if (count.value !== 0){
+            count.value--
+        } else {
+            return
+        }
+    }
 </script>
 
 <template>
