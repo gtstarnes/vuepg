@@ -15,7 +15,7 @@ import EcomCount from './EcomCount.vue';
             <div>discount</div>
         </div>
         <div>og price</div>
-        <div>
+        <div class="controls">
             <EcomCount />
             <EcomButton />
         </div>
@@ -23,5 +23,10 @@ import EcomCount from './EcomCount.vue';
 </template>
 
 <style lang="css" scoped>
-
+    .controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5em
+    }
 </style>
