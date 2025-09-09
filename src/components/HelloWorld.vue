@@ -1,13 +1,5 @@
-<script lang="ts" setup>
-import { ref } from 'vue';
+<script lang="ts" setup></script>
 
-let name = ref('')
-</script>
+<template></template>
 
-<template>
-  <input type="text" placeholder="who are you,stranger??" v-model="name"/>
-  <h1> Hello, {{ name || 'Stranger' }}</h1>
-</template>
-
-<style lang="css" scoped>
-</style>
+<style lang="css" scoped></style>
