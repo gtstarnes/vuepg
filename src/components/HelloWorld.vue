@@ -6,7 +6,11 @@ let name = ref("")
 </script>
 
 <template>
-  <p></p>
+  <p>
+    Hello, 
+    <span v-if="name">{{ name }}</span>
+    <span v-else>Stranger</span>
+  </p>
   <input type="text" placeholder="What's your name?" v-model="name" />
 </template>
 
