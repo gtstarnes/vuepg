@@ -14,4 +14,9 @@ let name = ref("")
   <input type="text" placeholder="What's your name?" v-model="name" />
 </template>
 
-<style lang="css" scoped></style>
+<style lang="css" scoped>
+  span {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+</style>
