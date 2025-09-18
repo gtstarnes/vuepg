@@ -2,7 +2,7 @@ const drumInfo = [
     {
         key: "A",
         text: "CLAP",
-        sound: '',
+        sound: './assets/clap.wav',
     },
     {
         key: "S",
