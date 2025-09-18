@@ -10,7 +10,7 @@ import DrumButton from './DrumButton.vue';
         <div>
             <ul>
                 <li v-for="d in drumInfo">
-                    <DrumButton :letter="d.key" :text="d.text"  />
+                    <DrumButton :letter="d.key" :text="d.text" :sound="d.sound"  />
                 </li>
             </ul>
         </div>
