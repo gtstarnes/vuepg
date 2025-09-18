@@ -21,7 +21,6 @@ import DrumButton from './DrumButton.vue';
         background: linear-gradient(white, grey, black);
         height: 99vh;
         width: 99vw;
-        margin: -5px;
         display: flex;
         align-items: center;
         justify-content: center

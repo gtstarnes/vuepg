@@ -36,10 +36,12 @@
         cursor: pointer;
         border: 3px black solid;
         font-weight: bold;
+        background-color: inherit;
 
         span {
             font-size: 0.5rem;
             font-weight: lighter;
+            color: orange
         }
     }
 
