@@ -1,5 +1,16 @@
-<script lang="tsx"></script>
+<script lang="tsx" setup>
 
-<template></template>
+    defineProps<{
+        key: string,
+        text: string
+    }>()
+</script>
+
+<template>
+    <button>
+        {{ key }}
+        <span>{{ text }}</span>
+    </button>
+</template>
 
 <style lang="css" scoped></style>
