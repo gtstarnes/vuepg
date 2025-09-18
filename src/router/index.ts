@@ -11,6 +11,7 @@ import Meter from "../components/meter/Meter.vue"
 import Socials from "../components/socials/Socials.vue";
 import ProductCard from "../components/product/ProductCard.vue";
 import Ecom from "../components/ecommerce/Ecom.vue";
+import Drum from "../components/drum/Drum.vue";
 
 
 export const routes = [
@@ -26,6 +27,7 @@ export const routes = [
     {path: '/socials', name: 'Socials', component: Socials},
     {path: '/product', name: 'Product Card', component: ProductCard},
     {path: '/ecom', name: 'Ecommerce', component: Ecom},
+    {path: '/drum', name: 'EDrum', component: Drum}
 ]
 
 const router = createRouter({
