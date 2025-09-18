@@ -2,12 +2,24 @@
 
     defineProps<{
         letter: string,
-        text: string
+        text: string,
+        sound: string
     }>()
+
+
+    const playSound = (path:string) => {
+        try {
+            const audio = new Audio(path)
+            audio.play()
+        } catch (error) {
+            console.error("Error playing audio", error)
+            return
+        }
+    }
 </script>
 
 <template>
-    <button>
+    <button @click="playSound(sound)">
         {{ letter }}
         <span>{{ text }}</span>
     </button>
