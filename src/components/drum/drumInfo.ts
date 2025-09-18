@@ -45,3 +45,5 @@ const drumInfo = [
         sound: '',
     },
 ]
+
+export {drumInfo}
