@@ -7,42 +7,42 @@ const drumInfo = [
     {
         key: "S",
         text: "HIHAT",
-        sound: '',
+        sound: 'src/components/drum/assets/hihat.wav',
     },
         {
         key: "D",
         text: "KICK",
-        sound: '',
+        sound: 'src/components/drum/assets/kick.wav',
     },
         {
         key: "F",
         text: "OPENHAT",
-        sound: '',
+        sound: 'src/components/drum/assets/openhat.wav',
     },
         {
         key: "G",
         text: "BOOM",
-        sound: '',
+        sound: 'src/components/drum/assets/boom.wav',
     },
         {
         key: "H",
         text: "RIDE",
-        sound: '',
+        sound: 'src/components/drum/assets/ride.wav',
     },
         {
         key: "J",
         text: "SNARE",
-        sound: '',
+        sound: 'src/components/drum/assets/snare.wav',
     },
         {
         key: "K",
         text: "TOM",
-        sound: '',
+        sound: 'src/components/drum/assets/tink.wav',
     },
     {
         key: "L",
         text: "TINK",
-        sound: '',
+        sound: 'src/components/drum/assets/tom.wav',
     },
 ]
 
