@@ -1,5 +1,4 @@
 <script lang="tsx" setup>
-    import { ref } from 'vue';
 import { drumInfo } from './drumInfo';
 import DrumButton from './DrumButton.vue';
 
@@ -19,11 +18,14 @@ import DrumButton from './DrumButton.vue';
 
 <style lang="css" scoped>
     section {
-        background: linear-gradient(white, grey);
-        height: 96vh;
+        background: linear-gradient(white, grey, black);
+        height: 99vh;
         width: 99vw;
         margin: -5px;
-
+        display: flex;
+        align-items: center;
+        justify-content: center
+         ;
         ul {
             list-style: none;
             display: flex;
