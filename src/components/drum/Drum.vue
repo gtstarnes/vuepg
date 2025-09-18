@@ -1,5 +1,15 @@
 <script lang="tsx" setup></script>
 
-<template></template>
+<template>
+    <section>
 
-<style lang="css" scoped></style>
+    </section>
+</template>
+
+<style lang="css" scoped>
+    section {
+        background: linear-gradient(white, grey);
+        height: 96vh;
+        width: 99vw;
+    }
+</style>
