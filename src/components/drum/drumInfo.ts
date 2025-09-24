@@ -20,7 +20,7 @@ const drumInfo = [
         sound: 'src/components/drum/assets/openhat.wav',
     },
         {
-        key: "G",
+        key: "C",
         text: "BOOM",
         sound: 'src/components/drum/assets/boom.wav',
     },
@@ -30,17 +30,17 @@ const drumInfo = [
         sound: 'src/components/drum/assets/ride.wav',
     },
         {
-        key: "J",
+        key: "X",
         text: "SNARE",
         sound: 'src/components/drum/assets/snare.wav',
     },
         {
-        key: "K",
+        key: "Q",
         text: "TOM",
         sound: 'src/components/drum/assets/tink.wav',
     },
     {
-        key: "L",
+        key: "E",
         text: "TINK",
         sound: 'src/components/drum/assets/tom.wav',
     },
