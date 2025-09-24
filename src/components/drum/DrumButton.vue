@@ -1,6 +1,8 @@
 <script lang="tsx" setup>
+import { onMounted, onUnmounted } from 'vue';
 
-    defineProps<{
+
+    const {letter, text, sound} =defineProps<{
         letter: string,
         text: string,
         sound: string
@@ -16,10 +18,25 @@
             return
         }
     }
+
+    const handleKeydown = (e: KeyboardEvent) => {
+        const key = e.key.toLowerCase();
+        if (key === letter.toLowerCase()) {
+            playSound(sound)
+        }
+    }
+
+    onMounted(() => {
+        window.addEventListener("keydown", handleKeydown)
+    })
+    onUnmounted(()=> {
+        window.removeEventListener("keydown", handleKeydown)
+    })
 </script>
 
 <template>
-    <button @click="playSound(sound)">
+    <button 
+        @click="playSound(sound)" :key="letter">
         {{ letter }}
         <span>{{ text }}</span>
     </button>
