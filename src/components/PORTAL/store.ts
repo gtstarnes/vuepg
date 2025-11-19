@@ -5,6 +5,7 @@ type User = {
     name: string,
     password: string,
 }
+type Portal = "login" | "signup"
 
 const users = ref<User[]>([
     {
@@ -18,12 +19,63 @@ const users = ref<User[]>([
         password: '1234'
     },
 ])
+const portals = [
+    {
+        name: "login",
+        inputs: [
+            {
+                type: "text",
+                name: "username",
+                id: "username",
+                placeholder: "Username",
+                label: "Username"
+            },
+            {
+                type: "text",
+                name: "password",
+                id: "password",
+                placeholder: "Password",
+                label: "Password"
+            },
+        ]
+    },
+    {
+        name: "signup",
+        inputs: [
+            {
+                type: "text",
+                name: "name",
+                id: "name",
+                placeholder: "Name",
+                label: "Name"
+            },
+            {
+                type: "text",
+                name: "username",
+                id: "username",
+                placeholder: "Username",
+                label: "Username"
+            },
+            {
+                type: "text",
+                name: "password",
+                id: "password",
+                placeholder: "Password",
+                label: "Password"
+            },
+        ]
+    }
+]
 
 const loginStatus = ref<boolean>(false);
-const portalStatus = ref<boolean>(false) 
+const portalStatus = ref<boolean>(false);
+const currentPortal = ref<string>("login")
 
 function toggleStatus(status:boolean) {
     return status = !status
+}
+function changePortal(portal: Portal) {
+    currentPortal.value = portal
 }
 function findUser(user:string){
     return users.value.find(u => {
