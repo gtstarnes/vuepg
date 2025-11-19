@@ -21,3 +21,14 @@ const users = ref<User[]>([
 
 const loginStatus = ref<boolean>(false);
 const toggle = ref<boolean>(false) 
+
+
+function findUser(user:string){
+    return users.value.find(u => {
+        return u.username === user
+    })
+}
+
+export {
+    findUser
+}
