@@ -20,9 +20,11 @@ const users = ref<User[]>([
 ])
 
 const loginStatus = ref<boolean>(false);
-const toggle = ref<boolean>(false) 
+const portalStatus = ref<boolean>(false) 
 
-
+function toggleStatus(status:boolean) {
+    return status = !status
+}
 function findUser(user:string){
     return users.value.find(u => {
         return u.username === user
