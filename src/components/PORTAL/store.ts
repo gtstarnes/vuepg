@@ -18,3 +18,6 @@ const users = ref<User[]>([
         password: '1234'
     },
 ])
+
+const loginStatus = ref<boolean>(false);
+const toggle = ref<boolean>(false) 
