@@ -71,6 +71,11 @@ const loginStatus = ref<boolean>(false);
 const portalStatus = ref<boolean>(false);
 const currentPortal = ref<string>("login")
 
+function getPortal() {
+    return portals.find(portal => {
+        return portal.name === currentPortal.value
+    })
+}
 function toggleStatus(status:boolean) {
     return status = !status
 }
@@ -84,5 +89,6 @@ function findUser(user:string){
 }
 
 export {
-    findUser
+    findUser,
+    getPortal
 }
