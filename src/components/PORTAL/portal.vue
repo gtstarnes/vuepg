@@ -1,14 +1,16 @@
 <script lang="ts" setup>
-    import { getPortal } from './store';
+    import Login from './Login.vue';
+import Signup from './Signup.vue';
+import { getPortal } from './store';
 
 </script>
 
 <template>
     <div v-if="getPortal() === 'login'">
-        Login
+       <Login />
     </div>
     <div v-else-if="getPortal() === 'signup'">
-        signup
+        <Signup />
     </div>
     <div v-else>
         something went wrong
