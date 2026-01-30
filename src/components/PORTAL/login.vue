@@ -32,5 +32,13 @@
 </template>
 
 <style lang="css" scoped>
+    form {
+        display: flex;
+        flex-direction: column;
+        gap:0.25rem;
 
+        button {
+            cursor: pointer;
+        }
+    }
 </style>
