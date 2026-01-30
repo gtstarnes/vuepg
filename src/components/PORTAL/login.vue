@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-
+    import { changePortal } from './store';
 </script>
 
 <template>
@@ -23,7 +23,7 @@
             <button>Cancel</button>
             <div>
                 Don't have an account? Create one 
-                <button>
+                <button @click="changePortal('signup')">
                     here
                 </button>
             </div>
