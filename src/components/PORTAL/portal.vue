@@ -1,22 +1,18 @@
 <script lang="ts" setup>
-import { getPortal } from './store';
-
-const portal = getPortal()
+    import { getPortal } from './store';
 
 </script>
 
 <template>
-    <form>
-        <div v-for="input in portal?.inputs">
-            <label :for="input.name">{{ input.label }}: </label>
-            <input :type="input.type" :placeholder="input.placeholder"  />
-        </div>
-        <div>
-            <button>Submit</button>
-            <button>Cancel</button>
-        </div>
-    </form>
-
+    <div v-if="getPortal() === 'login'">
+        Login
+    </div>
+    <div v-else-if="getPortal() === 'signup'">
+        signup
+    </div>
+    <div v-else>
+        something went wrong
+    </div>
 </template>
 
 <style lang="css" scoped>

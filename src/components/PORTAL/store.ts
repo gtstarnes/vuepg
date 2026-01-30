@@ -72,9 +72,7 @@ const portalStatus = ref<boolean>(false);
 const currentPortal = ref<string>("login")
 
 function getPortal() {
-    return portals.find(portal => {
-        return portal.name === currentPortal.value
-    })
+    return currentPortal.value
 }
 function toggleStatus(status:boolean) {
     return status = !status
