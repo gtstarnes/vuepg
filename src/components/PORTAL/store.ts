@@ -19,53 +19,7 @@ const users = ref<User[]>([
         password: '1234'
     },
 ])
-const portals = [
-    {
-        name: "login",
-        inputs: [
-            {
-                type: "text",
-                name: "username",
-                id: "username",
-                placeholder: "Username",
-                label: "Username"
-            },
-            {
-                type: "text",
-                name: "password",
-                id: "password",
-                placeholder: "Password",
-                label: "Password"
-            },
-        ]
-    },
-    {
-        name: "signup",
-        inputs: [
-            {
-                type: "text",
-                name: "name",
-                id: "name",
-                placeholder: "Name",
-                label: "Name"
-            },
-            {
-                type: "text",
-                name: "username",
-                id: "username",
-                placeholder: "Username",
-                label: "Username"
-            },
-            {
-                type: "text",
-                name: "password",
-                id: "password",
-                placeholder: "Password",
-                label: "Password"
-            },
-        ]
-    }
-]
+
 
 const loginStatus = ref<boolean>(false);
 const portalStatus = ref<boolean>(false);
