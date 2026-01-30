@@ -42,5 +42,6 @@ function findUser(user:string){
 
 export {
     findUser,
-    getPortal
+    getPortal,
+    changePortal,
 }
