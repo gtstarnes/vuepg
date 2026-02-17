@@ -6,3 +6,6 @@ type User = {
     username:string,
     password:string,
 }
+
+const users = ref<User[]>([]);
+const portalStatus = ref<boolean>(true);
