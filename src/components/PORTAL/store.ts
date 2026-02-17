@@ -29,3 +29,11 @@ function getUserByUsername(user:string){
 function changePortal() {
     portalStatus.value = !portalStatus.value;
 }
+
+//exports
+export {
+    getPortalStatus,
+    getLoginStatus,
+    getUserByUsername,
+    changePortal,
+}
